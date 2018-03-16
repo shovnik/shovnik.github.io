@@ -6,7 +6,7 @@ const COLUMNS = 15;
 const ROWS = 10;
 
 // Adjust number of mines
-const MINES = 1;
+const MINES = 23;
 
 // Adjust minefield offset
 const X_OFFSET = SCALE/4;
