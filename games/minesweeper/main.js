@@ -36,14 +36,15 @@ function newGame () {
 
 // Initial setup
 function setup() {
-  // Disables right click context menu
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  createCanvas(SCALE*COLUMNS + X_OFFSET*2, SCALE*ROWS + Y_OFFSET*10/9);
+  const canvas = createCanvas(SCALE*COLUMNS + X_OFFSET*2, SCALE*ROWS + Y_OFFSET*10/9);
+  canvas.parent('canvas');
   textAlign(CENTER, CENTER);
   background(BACKGROUND_COLOUR);
   setInterval(updateTimer, 1000);
   newGame();
+
+  // Disables right click context menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
 }
 
 // Increments timer

@@ -28,7 +28,8 @@ function newGame() {
 
 // Initial setup
 function setup() {
-  createCanvas(LENGTH, LENGTH + SCALE/2);
+  const canvas = createCanvas(LENGTH + 1, LENGTH + SCALE/2 + 1);
+  canvas.parent('canvas');
   stroke(EDGE_COLOUR);
   strokeWeight(SCALE/32);
   textAlign(CENTER, CENTER);
@@ -40,5 +41,7 @@ function setup() {
 // Shows given message below board
 function show(message) {
   fill(TEXT_COLOUR);
+  textSize(SCALE/3);
+  strokeWeight(SCALE/100)
   text(message, LENGTH/2, LENGTH + SCALE/4);
 }

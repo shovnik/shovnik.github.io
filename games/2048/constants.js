@@ -1,5 +1,5 @@
 // Adjust scale
-const SCALE = 190;
+const SCALE = 500/3;
 
 // Adjust dimensions
 const DIMENSIONS = 4;
@@ -17,7 +17,6 @@ const DOWN = 40;
 const BACKGROUND_COLOUR = 'Gray';
 const TILE_COLOUR = 'White';
 const EDGE_COLOUR = 'Black';
-
 const TEXT_COLOUR = 'Black';
 
 

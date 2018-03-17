@@ -1,12 +1,12 @@
 // Adjust scale
-const SCALE = 50;
+const SCALE = 1500/31;
 
 // Adjust dimensions of grid
 const COLUMNS = 15;
-const ROWS = 10;
+const ROWS = 12;
 
 // Adjust number of mines
-const MINES = 23;
+const MINES = 30;
 
 // Adjust minefield offset
 const X_OFFSET = SCALE/4;

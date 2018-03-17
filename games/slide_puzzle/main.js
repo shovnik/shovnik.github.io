@@ -37,7 +37,8 @@ function newGame() {
 
 // Initial setup
 function setup() {
-  createCanvas(SCALE*COLUMNS + 1, SCALE*(ROWS + 1/2) + 1);
+  const canvas = createCanvas(SCALE*COLUMNS + 1, SCALE*(ROWS + 1/2) + 1);
+  canvas.parent('canvas');
   textAlign(CENTER, CENTER);
   setInterval(updateTime, 1000);
   newGame();

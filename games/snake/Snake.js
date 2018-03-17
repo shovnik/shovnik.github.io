@@ -71,7 +71,7 @@ class Snake {
 
   // Checks collision for snake head with wall or tail
   collide() {
-    if (this.head.x < 0 || this.head.y < 0 || this.head.x > SCALE*19 || this.head.y > SCALE*19) {
+    if (this.head.x < 0 || this.head.y < 0 || this.head.x > SCALE*(WIDTH - 1) || this.head.y > SCALE*(HEIGHT - 1)) {
       return true;
     }
     for (let i = 20; i < this.tail.length; i++) {

@@ -9,11 +9,11 @@ function draw() {
 
   // Background
   fill(BACKGROUND_COLOUR);
-  rect(0, 0, SCALE*20, SCALE*20);
+  rect(0, 0, SCALE*WIDTH, SCALE*HEIGHT);
 
   // Score
   fill(TEXT_COLOUR);
-  text("Score: " + snake.score, SCALE*10, SCALE*21);
+  text("Score: " + snake.score, SCALE*(WIDTH / 2), SCALE*(HEIGHT + 1));
   snake.update();
 
   snake.display();
@@ -31,13 +31,14 @@ function keyPressed() {
 
 // Creates new game of snake
 function newGame() {
-  snake = new Snake(SCALE*10, SCALE*10);
+  snake = new Snake(SCALE*WIDTH/2, SCALE*HEIGHT/2);
   food = new Food();
 }
 
 // Initial setup
 function setup() {
-  createCanvas(SCALE*20 + 1, SCALE*22 + 1);
+  const canvas = createCanvas(SCALE*WIDTH + 1, SCALE*(HEIGHT + 2) + 1);
+  canvas.parent('canvas');
   frameRate(120);
   textAlign(CENTER, CENTER);
   textSize(SCALE);

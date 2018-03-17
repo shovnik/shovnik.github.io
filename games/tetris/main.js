@@ -91,7 +91,8 @@ function newGame() {
 
 //selects colour of inner block
 function setup() {
-  createCanvas(d * (c + 12) + 1, d * r + 1);
+  const canvas = createCanvas(d * (c + 12) + 1, d * r + 1);
+  canvas.parent('canvas');
   background(192);
   frameRate(fps);
   textAlign(CENTER, CENTER);

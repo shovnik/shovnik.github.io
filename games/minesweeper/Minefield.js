@@ -16,8 +16,9 @@ class Minefield {
 
   // Automatically marks cells surrounded by revealed non-mine cells
   automarkCell(col, row) {
+    this.revealedCounter(col, row);
     if (this.grid[col][row].revealedCount === 8 || ((col === 0 || col === COLUMNS - 1 || row === 0 || row === ROWS - 1)
-     && this.grid[col][row].revealedCount === 5) || (((col === 0 && row === 0) || (!col && row === ROWS - 1) || (col === COLUMNS - 1 && !row)
+     && this.grid[col][row].revealedCount === 5) || (((col === 0 && row === 0) || (col === 0 && row === ROWS - 1) || (col === COLUMNS - 1 && row === 0)
       || (col === COLUMNS - 1 && row === ROWS - 1)) && this.grid[col][row].revealedCount === 3)) {
       this.grid[col][row].marked = true;
       this.minesMarked++;
@@ -32,8 +33,9 @@ class Minefield {
     for (let col = 0; col < COLUMNS; col++) {
       for (let row = 0; row < ROWS; row++) {
         if (!this.grid[col][row].marked && !this.grid[col][row].revealed) {
-          this.revealedCounter(col, row);
-          won = this.automarkCell(col, row);
+          if(!this.automarkCell(col, row)) {
+            won = false;
+          };
         }
       }
     }
@@ -193,6 +195,7 @@ class Minefield {
 
   // Counts surrounding revealed cells
   revealedCounter(col, row) {
+    this.grid[col][row].revealedCount = 0;
     for (let i = col - 1; i <= col + 1; i++) {
       for (let j = row - 1; j <= row + 1; j++) {
         if (i >= 0 && i < COLUMNS && j >= 0 && j < ROWS) {
