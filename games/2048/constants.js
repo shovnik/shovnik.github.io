@@ -14,8 +14,8 @@ const RIGHT = 39;
 const DOWN = 40;
 
 // Change colours
-const BACKGROUND_COLOUR = 'Gray';
-const TILE_COLOUR = 'White';
+const BACKGROUND_COLOUR = 'DimGray';
+const TILE_COLOUR = 'LightGray';
 const EDGE_COLOUR = 'Black';
 
 const TEXT_COLOUR = 'Black';

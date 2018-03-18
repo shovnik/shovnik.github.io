@@ -10,8 +10,8 @@ const RIGHT = 39;
 const DOWN = 40;
 
 // Change colours
-const FRAME_COLOUR = 'LightGray';
-const BACKGROUND_COLOUR = 'White';
+const FRAME_COLOUR = 'DimGray';
+const BACKGROUND_COLOUR = 'LightGray';
 const SNAKE_COLOUR = 'Green';
 const EYE_COLOUR = 'White';
 const PUPIL_COLOUR = 'Black';

@@ -39,7 +39,7 @@ function setup() {
   const canvas = createCanvas(SCALE*COLUMNS + X_OFFSET*2, SCALE*ROWS + Y_OFFSET*10/9);
   canvas.parent('canvas');
   textAlign(CENTER, CENTER);
-  background(BACKGROUND_COLOUR);
+  background(FRAME_COLOUR);
   setInterval(updateTimer, 1000);
   newGame();
 

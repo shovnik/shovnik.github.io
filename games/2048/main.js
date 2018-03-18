@@ -33,7 +33,7 @@ function setup() {
   stroke(EDGE_COLOUR);
   textAlign(CENTER, CENTER);
   textSize(SCALE/2);
-  strokeWeight(SCALE/32);
+  strokeWeight(SCALE/100);
   newGame();
   show(NEUTRAL);
 }
@@ -42,8 +42,6 @@ function setup() {
 function show(message) {
   fill(TEXT_COLOUR);
   textSize(SCALE/3);
-  strokeWeight(SCALE/100)
   text(message, LENGTH/2, LENGTH + SCALE/4);
   textSize(SCALE/2);
-  strokeWeight(SCALE/32);
 }

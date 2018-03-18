@@ -5,12 +5,12 @@ let currentTime;
 
 // Redraws canvas
 function draw() {
-  // Frame
-  fill(BACKGROUND_COLOUR);
+  // Missing Tile
+  fill(MISSING_TILE_COLOUR);
   rect(0, 0, width, height - SCALE/2);
 
-  // Missing tile
-  fill(MISSING_TILE_COLOUR);
+  // Frame
+  fill(FRAME_COLOUR);
   rect(0, height - SCALE/2 - 1, width - 1, SCALE/2);
 
   // Timer

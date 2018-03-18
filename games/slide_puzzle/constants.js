@@ -6,8 +6,8 @@ const COLUMNS = 4;
 const ROWS = 4;
 
 // Change colours
-const BACKGROUND_COLOUR = 'Black';
-const TILE_COLOUR = 'White'
-const MISSING_TILE_COLOUR = 'LightGray';
+const FRAME_COLOUR = 'DimGray';
+const TILE_COLOUR = 'LightGray'
+const MISSING_TILE_COLOUR = 'Black';
 
 const TEXT_COLOUR = 'Black';

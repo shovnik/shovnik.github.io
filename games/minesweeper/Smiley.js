@@ -15,7 +15,7 @@ class Smiley {
 
   // Displays smiley on canvas
   display() {
-    fill(BACKGROUND_COLOUR);
+    fill(FRAME_COLOUR);
     rect(width/2 -  SCALE*5/8, SCALE/2, SCALE*5/4, SCALE*5/4);
     fill(255, 255, 0);
     ellipse(this.x, this.y, SCALE, SCALE);

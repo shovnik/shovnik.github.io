@@ -13,7 +13,7 @@ const X_OFFSET = SCALE/4;
 const Y_OFFSET = SCALE*9/4
 
 // Change colours
-const BACKGROUND_COLOUR = 'DimGray';
+const FRAME_COLOUR = 'DimGray';
 const MINEFIELD_COLOUR = 'LightGray';
 const CELL_COLOUR = 'DarkGray';
 const MINE_COLOUR = 'Black';
