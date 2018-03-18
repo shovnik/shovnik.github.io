@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 hr {
     height: 1px;
     border: 0;
@@ -7,7 +11,9 @@ hr {
 }
 
 h2 {
-  background: #222222;
+  background: #333;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 5px;
 }
