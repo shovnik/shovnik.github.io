@@ -91,7 +91,7 @@ class Arena {
       row++;
     }
     while(sweepcounter) {
-      score += sweepcounter*(60 + 20*player.level);
+      this.score += sweepcounter*(60 + 20*player.level);
       sweepcounter--;
     }
   }

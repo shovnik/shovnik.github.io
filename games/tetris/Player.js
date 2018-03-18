@@ -4,6 +4,7 @@ class Player {
     this.y = y;
     this.score = 0;
     this.dropTimer = 0;
+    this.dropKeyTimer = 0;
     this.shiftLeftKeyTimer = 0;
     this.shiftRightKeyTimer = 0;
 
@@ -221,12 +222,12 @@ class Player {
   // Updates player block's position
   update() {
     if (keyIsDown(DROP)) {
-      if (this.downKeyTimer === 0) {
+      if (this.dropKeyTimer === 0) {
         this.block.y++;
-        this.downKeyTimer = 3;
+        this.dropKeyTimer = 5;
       }
       else {
-        this.downKeyTimer--;
+        this.dropKeyTimer--;
       }
     }
     else{
