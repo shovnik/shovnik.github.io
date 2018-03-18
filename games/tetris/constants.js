@@ -24,19 +24,19 @@ const EDGE_COLOUR = 'White';
 
 const TEXT_COLOUR = 'Black';
 
-const I_OUTER_COLOUR = 'DeepSkyBlue';
-const Z_OUTER_COLOUR = 'Red';
-const S_OUTER_COLOUR = 'DarkGreen';
-const J_OUTER_COLOUR = 'Blue';
-const L_OUTER_COLOUR = 'Tomato';
+const I_OUTER_COLOUR = 'CadetBlue';
+const Z_OUTER_COLOUR = 'FireBrick';
+const S_OUTER_COLOUR = 'ForestGreen';
+const J_OUTER_COLOUR = 'RoyalBlue';
+const L_OUTER_COLOUR = 'DarkSalmon';
 const T_OUTER_COLOUR = 'HotPink';
-const O_OUTER_COLOUR = 'Orange';
+const O_OUTER_COLOUR = 'GoldenRod';
 
-const I_INNER_COLOUR = 'DodgerBlue';
+const I_INNER_COLOUR = 'SkyBlue';
 const Z_INNER_COLOUR = 'DarkRed';
-const S_INNER_COLOUR = 'Green';
-const J_INNER_COLOUR = 'DarkBlue';
-const L_INNER_COLOUR = 'DarkOrange';
+const S_INNER_COLOUR = 'DarkGreen';
+const J_INNER_COLOUR = 'Blue';
+const L_INNER_COLOUR = 'Chocolate';
 const T_INNER_COLOUR = 'DeepPink';
 const O_INNER_COLOUR = 'Gold';
 
