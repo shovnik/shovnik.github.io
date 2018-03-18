@@ -39,7 +39,7 @@ class Minefield {
         }
       }
     }
-    if (won) {
+    if (won && this.gameState !== LOST) {
       this.gameState = WON;
     }
   }
