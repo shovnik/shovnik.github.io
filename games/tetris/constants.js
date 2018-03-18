@@ -40,6 +40,15 @@ const L_INNER_COLOUR = 'DarkOrange';
 const T_INNER_COLOUR = 'DeepPink';
 const O_INNER_COLOUR = 'Gold';
 
+// Block types
+const I = 1;
+const Z = 2;
+const S = 3;
+const J = 4;
+const L = 5;
+const T = 6;
+const O = 7;
+
 // Directions for rotation
 const CLOCKWISE = 1;
 const ANTICLOCKWISE = -1;

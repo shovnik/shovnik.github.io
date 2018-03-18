@@ -12,37 +12,37 @@ class Arena {
   // Returns cell colour
   colours(type) {
     switch (type) {
-      case 1:
+      case I:
         return {
           outer: I_OUTER_COLOUR,
           inner: I_INNER_COLOUR,
         }
-      case 2:
+      case Z:
         return {
           outer: Z_OUTER_COLOUR,
           inner: Z_INNER_COLOUR,
         }
-      case 3:
+      case S:
         return {
           outer: S_OUTER_COLOUR,
           inner: S_INNER_COLOUR,
         }
-      case 4:
+      case J:
         return {
           outer: J_OUTER_COLOUR,
           inner: J_INNER_COLOUR,
         }
-      case 5:
+      case L:
         return {
           outer: L_OUTER_COLOUR,
           inner: L_INNER_COLOUR,
         }
-      case 6:
+      case T:
         return {
           outer: T_OUTER_COLOUR,
           inner: T_INNER_COLOUR,
         }
-      case 7:
+      case O:
         return {
           outer: O_OUTER_COLOUR,
           inner: O_INNER_COLOUR,

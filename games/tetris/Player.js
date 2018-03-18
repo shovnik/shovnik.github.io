@@ -96,10 +96,13 @@ class Player {
     this.blockCounter++;
     for (let i = 0; i < this.nextTypeQueue.length; i++) {
       switch (this.nextTypeQueue[i]) {
-        case 1:
+        case I:
         this.nextBlockQueue[i] = new Block(COLUMNS + 7, 3.5 + i*5, this.nextTypeQueue[i]);
           break;
-        case 7:
+        case T:
+        this.nextBlockQueue[i] = new Block(COLUMNS + 7.5, 3 + i*5, this.nextTypeQueue[i]);
+          break;
+        case O:
         this.nextBlockQueue[i] = new Block(COLUMNS + 8, 4 + i*5, this.nextTypeQueue[i]);
           break;
         default:
@@ -129,10 +132,13 @@ class Player {
       this.typeStored = tmp;
     }
     switch (this.typeStored) {
-      case 1:
+      case I:
       this.blockStored = new Block(1, 3.5, this.typeStored);
         break;
-      case 7:
+      case T:
+      this.blockStored = new Block(1.5, 3, this.typeStored);
+        break;
+      case O:
       this.blockStored = new Block(2, 4, this.typeStored);
         break;
       default:

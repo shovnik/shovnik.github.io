@@ -31,9 +31,9 @@ function setup() {
   const canvas = createCanvas(LENGTH + 1, LENGTH + SCALE/2 + 1);
   canvas.parent('canvas');
   stroke(EDGE_COLOUR);
-  strokeWeight(SCALE/32);
   textAlign(CENTER, CENTER);
   textSize(SCALE/2);
+  strokeWeight(SCALE/32);
   newGame();
   show(NEUTRAL);
 }
@@ -44,4 +44,6 @@ function show(message) {
   textSize(SCALE/3);
   strokeWeight(SCALE/100)
   text(message, LENGTH/2, LENGTH + SCALE/4);
+  textSize(SCALE/2);
+  strokeWeight(SCALE/32);
 }

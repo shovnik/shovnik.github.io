@@ -4,12 +4,11 @@ class Block {
     this.y = y;
     this.type = type; //types (1='I',2='Z',3='S',4='J',5='L',6='T',7='O')
     switch (this.type) {
-      //'I' shape
-      case 1:
+      case I:
         this.matrixSize = 4;
         this.matrix = [
           [0, 0, 0, 0],
-          [1, 1, 1, 1],
+          [I, I, I, I],
           [0, 0, 0, 0],
           [0, 0, 0, 0],
         ];
@@ -18,12 +17,11 @@ class Block {
           inner: I_INNER_COLOUR,
         };
         break;
-      //'Z' shape
-      case 2:
+      case Z:
         this.matrixSize = 3;
         this.matrix = [
-          [2, 2, 0],
-          [0, 2, 2],
+          [Z, Z, 0],
+          [0, Z, Z],
           [0, 0, 0],
         ];
         this.colours = {
@@ -31,12 +29,11 @@ class Block {
           inner: Z_INNER_COLOUR,
         };
         break;
-      //'S' shape
-      case 3:
+      case S:
         this.matrixSize = 3;
         this.matrix = [
-          [0, 3, 3],
-          [3, 3, 0],
+          [0, S, S],
+          [S, S, 0],
           [0, 0, 0],
         ];
         this.colours = {
@@ -44,12 +41,11 @@ class Block {
           inner: S_INNER_COLOUR,
         };
         break;
-      //'J' shape
-      case 4:
+      case J:
         this.matrixSize = 3;
         this.matrix = [
-          [4, 0, 0],
-          [4, 4, 4],
+          [J, 0, 0],
+          [J, J, J],
           [0, 0, 0],
         ];
         this.colours = {
@@ -57,12 +53,11 @@ class Block {
           inner: J_INNER_COLOUR,
         };
         break;
-      //'L' shape
-      case 5:
+      case L:
         this.matrixSize = 3;
         this.matrix = [
-          [0, 0, 5],
-          [5, 5, 5],
+          [0, 0, L],
+          [L, L, L],
           [0, 0, 0],
         ];
         this.colours = {
@@ -70,25 +65,23 @@ class Block {
           inner: L_INNER_COLOUR,
         };
         break;
-      //'T' shape
-      case 6:
+      case T:
         this.matrixSize = 3;
         this.matrix = [
           [0, 0, 0],
-          [0, 6, 0],
-          [6, 6, 6],
+          [0, T, 0],
+          [T, T, T],
         ];
         this.colours = {
           outer: T_OUTER_COLOUR,
           inner: T_INNER_COLOUR,
         };
         break;
-      //'O' shape
-      case 7:
+      case O:
         this.matrixSize = 2;
         this.matrix = [
-          [7, 7],
-          [7, 7],
+          [O, O],
+          [O, O],
         ];
         this.colours = {
           outer: O_OUTER_COLOUR,
