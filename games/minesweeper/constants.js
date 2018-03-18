@@ -1,5 +1,5 @@
 // Adjust scale
-const SCALE = 1500/31;
+const SCALE = 1500/29;
 
 // Adjust dimensions of grid
 const COLUMNS = 15;

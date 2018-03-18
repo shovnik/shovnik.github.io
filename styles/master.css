@@ -1,4 +1,41 @@
 body {
   background: #00008B;
-  font-family: arial;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 80px;
+  font-family: 'Advent Pro';
+}
+
+li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    font-size:1.5vw;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+
+#navBar {
+    list-style-type: none;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position:fixed;
+    width:100%;
+}
+
+.navItem {
+    float: left;
+}
+
+footer {
+  text-align: right;
+  padding: 20px 20px;
 }

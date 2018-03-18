@@ -1,7 +1,7 @@
 // Adjust scale
 const SCALE = 30;
 const WIDTH = 25;
-const HEIGHT = 25;
+const HEIGHT = 23;
 
 // Adjust controls
 const LEFT = 37;
