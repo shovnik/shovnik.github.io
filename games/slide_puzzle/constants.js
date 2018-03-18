@@ -9,4 +9,5 @@ const ROWS = 4;
 const BACKGROUND_COLOUR = 'Black';
 const TILE_COLOUR = 'White'
 const MISSING_TILE_COLOUR = 'LightGray';
+
 const TEXT_COLOUR = 'Black';

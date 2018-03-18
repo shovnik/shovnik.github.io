@@ -17,6 +17,7 @@ const DOWN = 40;
 const BACKGROUND_COLOUR = 'Gray';
 const TILE_COLOUR = 'White';
 const EDGE_COLOUR = 'Black';
+
 const TEXT_COLOUR = 'Black';
 
 

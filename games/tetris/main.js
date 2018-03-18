@@ -1,101 +1,65 @@
-var c = 10; //columns
-var r = 20; //rows
-var d = 40; //scale
-var fps = 60; //framerate
-var score;
-var blockCounter; //counts blocks spawned so far in game
+let arena;
+let player;
 
-//redraws canvas
+// Redraws canvas
 function draw() {
-  fill('Gray');
+  // Frame
+  fill(FRAME_COLOUR);
   rect(0, 0, width, height);
-  fill('Black');
-  rect(d, d * 3, d * 4, d * 4);
+
+  //Background
+  fill(BACKGROUND_COLOUR);
+  rect(SCALE, SCALE*3, SCALE*4, SCALE*4);
   for (let i = 0; i < 3; i++) {
-    rect(d * (c + 7), d * (3 + i * 5), d * 4, d * 4);
+    rect(SCALE*(COLUMNS + 7), SCALE*(3 + i*5), SCALE*4, SCALE*4);
   }
+
+  // Text
+  fill(TEXT_COLOUR);
+  textSize(SCALE/2);
+  text("Stored: ", SCALE*2, SCALE*2.5);
+  text("Upcoming: ", SCALE*(COLUMNS + 8.5), SCALE*2.5);
+  textSize(SCALE*2/3);
+  text("Level: " + player.level, SCALE*2.5, SCALE*12);
+  text("Score: " + player.score, SCALE*2.5, SCALE*14);
+
   arena.display();
   player.display();
   player.update();
-  fill('Black');
-  textSize(d / 2);
-  text("Stored: ", d * 2, d * 2.5);
-  text("Upcoming: ", d * (c + 8.5), d * 2.5);
-  textSize(d * 2 / 3);
-  text("Level: " + player.level, d * 2.5, d * 12);
-  text("Score: " + score, d * 2.5, d * 14);
 }
 
-//speed landing and store keyboard functions
+// Interacts with key press
 function keyPressed() {
   switch (keyCode) {
-    case 16:
-      if (!player.storageUsed) {
-        player.store();
-      }
-      break;
-    case 17:
-      player.block.rotate(-1);
-      if (player.collides()) {
-        player.reposition(-1);
-      }
-      break;
-    case 32:
-      while (!player.lands()) {
-        player.block.y++;
-      }
-      player.block.y--;
-      player.dropTimer = fps;
-      break;
-    case 38:
-      player.block.rotate(1);
-      if (player.collides()) {
-        player.reposition(1);
-      }
-      break;
+    case INSTANT_DROP:
+      return player.instantDrop();
+    case ROTATE_CLOCKWISE:
+      return player.block.rotate(CLOCKWISE);
+    case ROTATE_ANTICLOCKWISE:
+      return player.block.rotate(ANTICLOCKWISE);
+    case STORE:
+      return player.store();
   }
 }
 
-//resets all key timers upon key release
+// Interacts with key release
 function keyReleased() {
-  switch (keyCode) {
-    case 40:
-      player.downKeyTimer = 0;
-      player.dropTimer = 0;
-      break;
-    case 37:
-      player.leftKeyTimer = 0;
-      break;
-    case 39:
-      player.rightKeyTimer = 0;
-      break;
-    case 38:
-      player.upKeyTimer = 0;
-      break;
-    case 17:
-      player.ctrlKeyTimer = 0;
-      break;
-  }
+  player.resetKeyTimer(keyCode);
 }
 
-//initiates a new game of tetris
+// Creates new game of tetris
 function newGame() {
-  score = 0;
   arena = new Arena();
   player = new Player(3, 0);
-  blockCounter = 0;
   player.newBlock();
-  blockCounter = 1;
   player.update();
 }
 
-//selects colour of inner block
+// Initial setup
 function setup() {
-  const canvas = createCanvas(d * (c + 12) + 1, d * r + 1);
+  const canvas = createCanvas(SCALE*(COLUMNS + 12) + 1, SCALE*ROWS + 1);
   canvas.parent('canvas');
-  background(192);
-  frameRate(fps);
+  frameRate(FRAMERATE);
   textAlign(CENTER, CENTER);
-  textStyle(NORMAL);
   newGame();
 }

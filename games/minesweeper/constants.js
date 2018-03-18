@@ -19,6 +19,8 @@ const CELL_COLOUR = 'DarkGray';
 const MINE_COLOUR = 'Black';
 const EDGE_COLOUR = 'Black';
 
+const TEXT_COLOUR = 'Black';
+
 const ONE_COLOUR = 'Blue';
 const TWO_COLOUR = 'Green';
 const THREE_COLOUR = 'Red';
@@ -27,8 +29,6 @@ const FIVE_COLOUR = 'Maroon';
 const SIX_COLOUR = 'Turquoise';
 const SEVEN_COLOUR = 'Black';
 const EIGHT_COLOUR = 'Silver';
-
-const TEXT_COLOUR = 'Black';
 
 // Game States
 const WON = 1;
