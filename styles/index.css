@@ -1,31 +1,10 @@
-a {
-  text-decoration: none;
-}
-
-hr {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 0;
-    padding: 0 0 15px 0;
-}
-
-h2 {
-  background: #333;
-  color: #FFF;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 5px;
-}
-
 .game {
-  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #000;
+  margin: 2px 2px 12px 2px;
 }
 
-#_2048 {
-  padding: 0 0 15px 0;
-}
-
-#title {
-  text-align: center;
+.controls {
+  margin: 10px 0;
+  padding: 0 0 0 40px;
 }

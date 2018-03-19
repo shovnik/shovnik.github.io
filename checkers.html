@@ -13,8 +13,8 @@
   </head>
   <body>
     <header>
-      <li class="navItem" id="home">
-        <li class="navItem">
+      <ul id="navBar">
+        <li class="navItem" id="home">
           <a href="index.html">Home</a>
         </li>
         <li class="navItem">
@@ -32,9 +32,16 @@
         <li class="navItem">
           <a href="tetris.html">Tetris</a>
         </li>
+        <li class="navItem dropdown">
+          <span>Werewolf</span>
+          <div class="dropdownContent">
+            <a href="werewolf/roles.html">Roles</a>
+            <a href="werewolf/allegiances.html">Allegiances</a>
+          </div>
+        </li>
       </ul>
     </header>
-    <h1 id="title">Checkers</h1>
+    <h1>Checkers</h1>
     <div id="canvas"></div>
     <footer>© 2018 Shovnik Bhattacharya</footer>
   </body>

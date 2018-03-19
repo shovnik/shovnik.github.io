@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> Games </title>
+    <title>Games</title>
     <link rel="stylesheet" href="styles/master.css" type="text/css"> </link>
+    <link rel="stylesheet" href="styles/docs.css" type="text/css"> </link>
     <link rel="stylesheet" href="styles/index.css" type="text/css"> </link>
   </head>
   <body>
@@ -27,99 +28,99 @@
         <li class="navItem">
           <a href="tetris.html">Tetris</a>
         </li>
+        <li class="navItem dropdown">
+          <span>Werewolf</span>
+          <div class="dropdownContent">
+            <a href="werewolf/roles.html">Roles</a>
+            <a href="werewolf/allegiances.html">Allegiances</a>
+          </div>
+        </li>
       </ul>
     </header>
-    <h1 id="title">Roles</h1>
-    <div class="role" id="_2048">
-      <h2>2048</h2><hr/>
-      <div class="description">
+    <h1 id="title">Games</h1>
+    <div class="games">
+      <div class="game" id="_2048">
+        <a href="2048.html"><h2>2048</h2></a>
+        <div class="description">
+          <strong>How to play:</strong>
           <p>
             Slide numbered tiles on grid combining those of same value to create
             tile with the number 2048. However, you may continue thereafter,
             creating tiles with even larger numbers.
           </p>
+          <strong>Controls:</strong>
+          <ul class="controls">
+            <li>Arrow keys slide the tiles in the direction pressed</li>
+          </ul>
+        </div>
       </div>
-      <p>
-        <strong>Controls:</strong>
-        <ul>
-          <li>Arrow keys slide the tiles in the direction pressed</li>
-        </ul>
-      </p>
-    </div>
-    <div class="game" id="minesweeper">
-      <a href="minesweeper.html"><h2>Minesweeper</h2></a><hr/>
-      <div class="objective">
-        <strong>How to play:</strong>
-        <p>
-          Clear minefield by revealing cells and marking mine locations without
-          detonating any mines by using surrounding mine indices that appear on
-          revealed cells.
-         </p>
+      <div class="game" id="minesweeper">
+        <a href="minesweeper.html"><h2>Minesweeper</h2></a>
+        <div class="description">
+          <strong>How to play:</strong>
+          <p>
+            Clear minefield by revealing cells and marking mine locations without
+            detonating any mines by using surrounding mine indices that appear on
+            revealed cells.
+           </p>
+           <strong>Controls:</strong>
+           <ul class="controls">
+             <li>Left click hidden cell to reveal</li>
+             <li>Right click hidden cell to mark as mined</li>
+             <li>Click revealed cell with correct amount of surrounding marked
+                 cells to reveal surrounding hidden cells</li>
+           </ul>
+        </div>
       </div>
-      <p>
-        <strong>Controls:</strong>
-        <ul>
-          <li>Left click hidden cell to reveal</li>
-          <li>Right click hidden cell to mark as mined</li>
-          <li>Click revealed cell with correct amount of surrounding marked
-              cells to reveal surrounding hidden cells</li>
-        </ul>
-      </p>
-    </div>
-    <div class="game" id="slide_puzzle">
-      <a href="slide_puzzle.html"><h2>Slide Puzzle</h2></a><hr/>
-      <div class="objective">
-        <strong>How to play:</strong>
-        <p>
-          Order tiles from top left corner to bottom right corner of grid by
-          increasing value in as little time or as few moves as possible by
-          sliding tiles into the vacant space.
-         </p>
+      <div class="game" id="slide_puzzle">
+        <a href="slide_puzzle.html"><h2>Slide Puzzle</h2></a>
+        <div class="description">
+          <strong>How to play:</strong>
+          <p>
+            Order tiles from top left corner to bottom right corner of grid by
+            increasing value in as little time or as few moves as possible by
+            sliding tiles into the vacant space.
+           </p>
+           <strong>Controls:</strong>
+           <ul class="controls">
+             <li>Click tile adjacent to vacant space to slide it in</li>
+           </ul>
+        </div>
       </div>
-      <p>
-        <strong>Controls:</strong>
-        <ul>
-          <li>Click tile adjacent to vacant space to slide it in</li>
-        </ul>
-      </p>
-    </div>
-    <div class="game" id="snake">
-      <a href="snake.html"><h2>Snake</h2></a><hr/>
-      <div class="objective">
-        <strong>How to play:</strong>
-        <p>
-          Make the snake grow as large as possible by eating "food" without
-          colliding with any of the walls or the snake's own tail.
-         </p>
+      <div class="game" id="snake">
+        <a href="snake.html"><h2>Snake</h2></a>
+        <div class="description">
+          <strong>How to play:</strong>
+          <p>
+            Make the snake grow as large as possible by eating "food" without
+            colliding with any of the walls or the snake's own tail.
+           </p>
+           <strong>Controls:</strong>
+           <ul class="controls">
+             <li>Arrow keys change direction snake is heading</li>
+           </ul>
+        </div>
       </div>
-      <p>
-        <strong>Controls:</strong>
-        <ul>
-          <li>Arrow keys change direction snake is heading</li>
-        </ul>
-      </p>
-    </div>
-    <div class="game" id="tetris">
-      <a href="tetris.html"><h2>Tetris</h2></a><hr/>
-      <div class="objective">
-        <strong>How to play:</strong>
-        <p>
-          Score as high a score as possible clearing rows by filling them with
-          random tetronimo shaped blocks that continuously fall off the top of
-          the screen without overflowing out of the arena.
-         </p>
+      <div class="game" id="tetris">
+        <a href="tetris.html"><h2>Tetris</h2></a>
+        <div class="description">
+          <strong>How to play:</strong>
+          <p>
+            Score as high a score as possible clearing rows by filling them with
+            random tetronimo shaped blocks that continuously fall off the top of
+            the screen without overflowing out of the arena.
+           </p>
+           <strong>Controls:</strong>
+           <ul class="controls">
+             <li>Left and right arrow keys shift block side to side</li>
+             <li>Down arrow key drops block faster</li>
+             <li>Up arrow and control key rotate blocks clockwise and
+                 counter-clockwise respectively</li>
+             <li>Shift key stores block for future use</li>
+             <li>Spacebar instantly drops block until it collides</li>
+           </ul>
+        </div>
       </div>
-      <p>
-        <strong>Controls:</strong>
-        <ul>
-          <li>Left and right arrow keys shift block side to side</li>
-          <li>Down arrow key drops block faster</li>
-          <li>Up arrow and control key rotate blocks clockwise and
-              counter-clockwise respectively</li>
-          <li>Shift key stores block for future use</li>
-          <li>Spacebar instantly drops block until it collides</li>
-        </ul>
-      </p>
     </div>
     <footer>© 2018 Shovnik Bhattacharya</footer>
   </body>

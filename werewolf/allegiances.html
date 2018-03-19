@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Werewolf: Allegiances</title>
+    <link rel="stylesheet" href="../styles/master.css" type="text/css"> </link>
+    <link rel="stylesheet" href="../styles/docs.css" type="text/css"> </link>
+    <link rel="stylesheet" href="../styles/allegiances.css" type="text/css"> </link>
+  </head>
+  <body>
+    <header>
+      <ul id="navBar">
+        <li class="navItem" id="home">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="navItem">
+          <a href="../2048.html">2048</a>
+        </li>
+        <li class="navItem">
+          <a href="../minesweeper.html">Minesweeper</a>
+        </li>
+        <li class="navItem">
+          <a href="../slide_puzzle.html">Slide Puzzle</a>
+        </li class="navItem">
+        <li class="navItem">
+          <a href="../snake.html">Snake</a>
+        </li>
+        <li class="navItem">
+          <a href="../tetris.html">Tetris</a>
+        </li>
+        <li class="navItem dropdown">
+          <span>Werewolf</span>
+          <div class="dropdownContent">
+            <a href="roles.html">Roles</a>
+            <a href="allegiances.html">Allegiances</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <h1>Allegiances</h1>
+    <div class="roles">
+      <div class="role" id="bear-tamer">
+        <button class="collapsible">Bear Tamer</button>
+        <div class="description">
+            Once every night, the growl of the bear resonates through the
+            village if a wolf is directly beside you. If you are a wolf, the
+            bear may or may not growl every night regardless of the presence of
+            wolves beside you.
+        </div>
+      </div>
+      <div class="role" id="crow">
+        <button class="collapsible">Crow</button>
+        <div class="description">
+          Once every night, you may designate a player. The designated target
+          is announced to the entire village the next morning. When tallying the
+          votes for lynching, the total vote count for the designated target is
+          doubled.
+        </div>
+      </div>
+      <div class="role" id="fox">
+        <button class="collapsible">Fox</button>
+        <div class="description">
+          Once every night, you may sniff three consecutive players around the
+          village. Your flair, strangely unreliable, only lets you know if there
+          is at least one wolf among them. If you fail to find a wolf, your confidence in your flair is gone. You may never use your ability again.
+        </div>
+      </div>
+      <div class="role" id="healer">
+        <button class="collapsible">Healer</button>
+        <div class="description">
+          Once every night, you may choose to heal any one player including
+          yourself. If the healed player was attacked during the night, the
+          attack is negated. No player may be healed two nights in a row.
+        </div>
+      </div>
+      <div class="role" id="hunter">
+        <button class="collapsible">Hunter</button>
+        <div class="description">
+          In the moment before you die, your role is revealed to the village.
+          You may then choose to shoot another player with your rifle and bring
+          them down with you.
+        </div>
+      </div>
+      <div class="role" id="idiot">
+        <button class="collapsible">Idiot</button>
+        <div class="description">
+          In the moment where you are designated to be hung, your role is
+          revealed to the village. Feeling foolish for having thought you
+          capable of such devious crimes, the villagers decide to spare you.
+          However, they lose trust in your capacity to make an informed decision
+          any longer stripping your right to vote for any future decisions.
+        </div>
+      </div>
+      <div class="role" id="omen">
+        <button class="collapsible">Omen</button>
+        <div class="description">
+          Once every night, you may curse a player of your choice. The cursed
+          player may not use their ability or vote until the end of the next
+          night.
+        </div>
+      </div>
+      <div class="role" id="prankster">
+        <button class="collapsible">Prankster</button>
+        <div class="description">
+          Once over the course of the game, after a lynching is complete, you
+          may reveal your role and initiate a new lynching.
+        </div>
+      </div>
+      <div class="role" id="psychic">
+        <button class="collapsible">Psychic</button>
+        <div class="description">
+          Once every night, you may compare the aura of two players of your
+          choice. It will be revealed to you if they can win the game together
+          or not.
+        </div>
+      </div>
+      <div class="role" id="pupil">
+        <button class="collapsible">Pupil</button>
+        <div class="description">
+          Once over the course of the game when a player is announced dead,
+          you may opt to reveal your role and replace it with that player’s.
+        </div>
+      </div>
+      <div class="role" id="scarecrow">
+        <button class="collapsible">Scarecrow</button>
+        <div class="description">
+          Once every night, you may designate a player. The designated
+          target is announced to the entire village the next morning. When
+          tallying the votes for lynching, the total vote count for the designated target is halved.
+        </div>
+      </div>
+      <div class="role" id="seer">
+        <button class="collapsible">Seer</button>
+        <div class="description">
+          Once every night, you may see the true nature of a player of your
+          choice. A vision from a powerful being above shall reveal whether
+          that player is a wolf or not.
+        </div>
+      </div>
+      <div class="role" id="sibling">
+        <button class="collapsible">Sibling</button>
+        <div class="description">
+          Once every night, all remaining siblings meet for a brief silent
+          exchange. Once over the course of the game, they may elect to
+          execute a player provided they unanimously agree to do so.
+        </div>
+      </div>
+      <div class="role" id="thief">
+        <button class="collapsible">Thief</button>
+        <div class="description">
+          At the end of every night, you may assume the role of the player
+          of your choice leaving them as a thief instead.
+        </div>
+      </div>
+      <div class="role" id="veteran">
+        <button class="collapsible">Veteran</button>
+        <div class="description">
+          If you are attacked by the wolves, you are announced wounded in
+          the morning. You will die after the lynching of the day. If you
+          were lynched, your role is revealed to the village. The guilt
+          causes the village to cease functioning, henceforth all players
+          lose access to their roles’ abilities.
+        </div>
+      </div>
+      <div class="role" id="witch">
+        <button class="collapsible">Witch</button>
+        <div class="description">
+          You brewed two elusive potions to use over the course of the game,
+          one that heals and one that kills but only with a full dose.
+          Absent minded as you are, you don’t remember which flask contains
+          which potion. Once every night, you discover who has been
+          attacked. You may then choose to use potions on players of your
+          choice.
+        </div>
+      </div>
+      <script type="text/javascript" src="../scripts/collapsible.js"></script>
+    </div>
+    <footer>© 2018 Shovnik Bhattacharya</footer>
+  </body>
+</html>

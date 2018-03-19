@@ -1,5 +1,5 @@
 body {
-  /* background: #00008B; */
+  background: #EFF;
   color: #000;
   font-family: 'Advent Pro';
   margin: 0;
@@ -10,33 +10,61 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-li a {
-  color: #FFF;
-  display: block;
-  font-size:1.5vw;
-  padding: 14px 16px;
+a {
   text-decoration: none;
 }
 
-
-li a:hover {
-  background-color: #111;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 #navBar {
   background-color: #333;
   list-style-type: none;
   left: 0;
-  margin: 0px;
   overflow: hidden;
-  padding: 0;
   position:fixed;
   top: 0;
-  width:100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .navItem {
   float: left;
+}
+
+.navItem a, .navItem span {
+  color: #FFF;
+  display: inline-block;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+.navItem a:hover, .navItem span:hover {
+  background-color: #111;
+}
+
+.dropdown:hover {
+  cursor: default;
+}
+
+.dropdownContent {
+  background-color: #333;
+  display: none;
+  position: fixed;
+  z-index: -1;
+}
+
+.dropdownContent a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdownContent{
+  display: block;
 }
 
 h1 {
