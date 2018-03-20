@@ -10,19 +10,7 @@ h1 {
   text-shadow: 0 0 16px #F00;
 }
 
-.role {
-  border-radius: 10px;
-  box-shadow: 0 0 4px #000;
-  margin: 20px 2px;
-  opacity: 0.8;
-  width: 100%;
-}
-
-.role:hover {
-  box-shadow: 0 0 8px #000;
-}
-
-.collapsible {
+.collapse {
   background: #333;
   border: none;
   border-radius: 10px;
@@ -38,24 +26,44 @@ h1 {
   width: 100%;
 }
 
-.collapsible:hover {
-  background: #111;
+.collapse.active {
+  border-radius: 10px 10px 0 0;
 }
 
-.collapsible:after {
+.collapse.active:after {
+    content: "\2212";
+}
+
+.collapse:after {
   content: '\002B';
   float: right;
 }
 
-.collapsible.active {
-  border-radius: 10px 10px 0 0;
+.collapse:hover {
+  background: #111;
 }
 
-.collapsible.active:after {
-    content: "\2212";
-}
-
-.description {
+.collapsible {
+  background: #FFF;
+  border-radius: 0 0 10px 10px;
   display: none;
-  width: 98%;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.allegiance {
+  border-radius: 10px;
+  box-shadow: 0 0 4px #000;
+  margin: 20px 2px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.allegiance:hover {
+  box-shadow: 0 0 8px #000;
+}
+
+.winCondition {
+  margin-bottom: 20px;
 }

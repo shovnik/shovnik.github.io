@@ -1,4 +1,4 @@
-const collapsible = document.getElementsByClassName("collapsible");
+const collapsible = document.getElementsByClassName("collapse");
 for (let i = 0; i < collapsible.length; i++) {
   collapsible[i].addEventListener("click", function() {
     this.classList.toggle("active");
