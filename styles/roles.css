@@ -7,7 +7,7 @@ h1 {
   font-size: 100px;
   display: block;
   text-align: center;
-  text-shadow: 0 0 0.5em #F00;
+  text-shadow: 0 0 0.5em #0FF;
 }
 
 #left, #right {
@@ -26,7 +26,7 @@ h1 {
   outline: none;
   padding: 5px;
   text-align: left;
-  text-shadow: 0 0 0.25em #F00;
+  text-shadow: 0 0 0.25em #0FF;
   width: 100%;
 }
 
