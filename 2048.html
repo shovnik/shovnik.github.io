@@ -5,44 +5,49 @@
     <title>2048</title>
     <link rel="stylesheet" href="styles/master.css" type="text/css"> </link>
     <link rel="stylesheet" href="styles/games.css" type="text/css"> </link>
-    <script type="text/javascript" src="games/2048/constants.js"> </script>
-    <script type="text/javascript" src="games/2048/main.js"> </script>
-    <script type="text/javascript" src="games/2048/Board.js"> </script>
-    <script type="text/javascript" src="lib/p5.js"> </script>
-    <script type="text/javascript" src="lib/p5.dom.js"> </script>
+    <script src="games/2048/constants.js" defer> </script>
+    <script src="games/2048/main.js" defer> </script>
+    <script src="games/2048/Board.js" defer> </script>
+    <script src="lib/p5.js" defer> </script>
+    <script src="lib/p5.dom.js" defer> </script>
+    <script src="lib/jquery-3.3.1.min.js" defer> </script>
   </head>
   <body>
-    <header>
-      <ul id="navBar">
-        <li class="navItem" id="home">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="navItem">
-          <a href="2048.html">2048</a>
-        </li>
-        <li class="navItem">
-          <a href="minesweeper.html">Minesweeper</a>
-        </li>
-        <li class="navItem">
-          <a href="slide_puzzle.html">Slide Puzzle</a>
-        </li class="navItem">
-        <li class="navItem">
-          <a href="snake.html">Snake</a>
-        </li>
-        <li class="navItem">
-          <a href="tetris.html">Tetris</a>
-        </li>
-        <li class="navItem dropdown">
-          <span>Werewolf</span>
-          <div class="dropdownContent">
-            <a href="werewolf/roles.html">Roles</a>
-            <a href="werewolf/allegiances.html">Allegiances</a>
-          </div>
-        </li>
-      </ul>
-    </header>
-    <h1>2048</h1>
-    <div id="canvas"></div>
-    <footer>© 2018 Shovnik Bhattacharya</footer>
+    <div id="wrapper">
+      <div id="header">
+        <ul id="navBar">
+          <li class="navItem" id="home">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navItem">
+            <a href="2048.html">2048</a>
+          </li>
+          <li class="navItem">
+            <a href="minesweeper.html">Minesweeper</a>
+          </li>
+          <li class="navItem">
+            <a href="slide_puzzle.html">Slide Puzzle</a>
+          </li class="navItem">
+          <li class="navItem">
+            <a href="snake.html">Snake</a>
+          </li>
+          <li class="navItem">
+            <a href="tetris.html">Tetris</a>
+          </li>
+          <li class="navItem dropdown">
+            <span>Werewolf</span>
+            <div class="dropdownContent">
+              <a href="werewolf/roles.html">Roles</a>
+              <a href="werewolf/allegiances.html">Allegiances</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <h1>2048</h1>
+        <div id="canvas"></div>
+      </div>
+    </div>
+    <div id="footer">© 2018 Shovnik Bhattacharya</div>
   </body>
 </html>

@@ -1,25 +1,24 @@
 body {
   background-image: url("../werewolf/role.jpg");
+  color: #FFF;
 }
 
 h1 {
-  color: #000;
   font-size: 100px;
   display: block;
   text-align: center;
-  text-shadow: 0 0 16px #00F;
+  text-shadow: 0 0 20px #088;
 }
 
 .collapse {
-  background: #333;
+  background: inherit;
   border: none;
   border-radius: 10px;
   color: #FFF;
-  text-shadow: 0 0 4px #00F;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  cursor: inherit;
+  font-size: 5px;
+  text-shadow: 0 0 4px #000;
   font-size: 24px;
-  margin: 0;
   outline: none;
   padding: 5px;
   text-align: left;
@@ -35,31 +34,49 @@ h1 {
   float: right;
 }
 
-.collapse:hover {
-  background: #111;
-}
-
 .collapse.active:after {
     content: "\2212";
 }
 
 .collapsible {
-  background: #FFF;
+  background: inherit;
   border-radius: 0 0 10px 10px;
   display: none;
-  margin: 0;
-  padding: 20px;
+  font-size: 16px;
+  text-shadow: 0 0 4px #000;
   width: 100%;
+}
+
+.description {
+  padding: 20px;
+}
+
+.left, .right {
+  float: left;
+  height: 100%;
+  width: 50%;
 }
 
 .role {
+  background: #088;
   border-radius: 10px;
   box-shadow: 0 0 4px #000;
-  margin: 20px 2px;
+  cursor: pointer;
+  margin: 20px;
   opacity: 0.8;
-  width: 100%;
+}
+
+@keyframes panel {
+  from {
+    box-shadow: 0 0 1em #000;
+  }
+  to {
+    box-shadow: 0 0 2em #000;
+  }
 }
 
 .role:hover {
-  box-shadow: 0 0 8px #000;
+  animation: panel 200ms;
+  background: #111;
+  box-shadow: 0 0 2em #000;
 }

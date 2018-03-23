@@ -1,29 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
 
-body {
-  background: #EFF;
-  color: #000;
-  font-family: 'Advent Pro', sans-serif;
-  margin: 0;
-  margin-top: 55px;
-}
-
-footer {
-  padding: 20px;
-  text-align: right;
-}
-
 h1 {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
   padding: 15px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+#wrapper {
+  display: block;
+  font-family: sans-serif;
+  margin-top: 3em;
+  min-height: 100%;
+  position: relative;
+}
+
+#content {
+  padding-bottom: 4em;
+}
+
+#footer {
+  clear: both;
+  color: inherit;
+  font-family: sans-serif;
+  height: 1em;
+  margin: -2em 1.5em 0 0;
+  position: relative;
+  text-align: right;
 }
 
 .dropdownContent {

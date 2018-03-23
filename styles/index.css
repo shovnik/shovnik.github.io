@@ -1,3 +1,27 @@
+body {
+  background: #EFF;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  background: #333;
+  border-radius: 10px 10px 0 0;
+  color: #FFF;
+  font-weight: normal;
+  padding: 5px;
+}
+
+h2:hover {
+  color: #0FF;
+}
+
+p {
+  margin: 10px 20px;
+}
+
 .controls {
   margin: 10px 0;
   padding: 0 0 0 40px;
@@ -6,7 +30,6 @@
 .description {
   background: #FFF;
   border-radius: 0 0 10px 10px;
-  margin: 0;
   padding: 20px;
 }
 
