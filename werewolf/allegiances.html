@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/allegiances.css" type="text/css"></link>
     <script src="../lib/jquery-3.3.1.min.js" defer> </script>
     <script src="../scripts/collapse.js" defer></script>
+    <script src="../scripts/navScroll.js" defer></script>
   </head>
   <body>
     <div id="wrapper">
@@ -33,8 +34,8 @@
             <li class="navItem dropdown">
               <span>Werewolf</span>
               <div class="dropdownContent">
-                <a href="roles.html">Roles</a>
                 <a href="allegiances.html">Allegiances</a>
+                <a href="roles.html">Roles</a>
               </div>
             </li>
           </ul>
@@ -44,13 +45,13 @@
         <div id="allegiances">
           <div id="left">
             <div class="faction" id="villagers">
-              <h2>Villagers</h2>
+              <div class="titlePanel">
+                <h2>Villagers</h2>
+                <h3>Eradicate all wolves from the village.</h3>
+              </div>
               <div class="allegiance" id="brute">
                 <button class="collapse">Brute</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> No wolves remain in the game.
-                  </div>
                   <div class="description">
                       If you are attacked at night, you are announced fatally
                       wounded instead of dead. After the lynch of the day, you
@@ -61,9 +62,6 @@
               <div class="allegiance" id="lover">
                 <button class="collapse">Lover</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> No wolves remain in the game.
-                  </div>
                   <div class="description">
                       Every night, you may spend the night with the player of your
                       choice. You get killed if your lover is attacked rather than
@@ -75,9 +73,6 @@
               <div class="allegiance" id="mentor">
                 <button class="collapse">Mentor</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> No wolves remain in the game.
-                  </div>
                   <div class="description">
                       When you die, you may give your role to the player of your
                       choice. In this scenario, you act before the pupil.
@@ -87,9 +82,6 @@
               <div class="allegiance" id="peasant">
                 <button class="collapse">Peasant</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> No wolves remain in the game.
-                  </div>
                   <div class="description">
                       There is nothing special about you. You basically just wake
                       up in the morning, toil away, lynch a poor chap, and pray
@@ -100,9 +92,6 @@
               <div class="allegiance" id="soulmate">
                 <button class="collapse">Soulmate</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> No wolves remain in the game.
-                  </div>
                   <div class="description">
                       Only on the first night, you get to meet your soulmate
                       shrouded in silence and fall hopelessly in love. There
@@ -113,13 +102,13 @@
               </div>
             </div>
             <div class="faction" id="deranged">
-              <h2>Deranged</h2>
+              <div class="titlePanel">
+                <h2>Deranged</h2>
+                <h3>Trick the village into lynching you.</h3>
+              </div>
               <div class="allegiance" id="jester">
                 <button class="collapse">Jester</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> You get lynched.
-                  </div>
                   <div class="description">
                       There is nothing in the world you fantasize more than
                       getting lynched. The intense feeling as the rope tightens
@@ -134,28 +123,13 @@
           </div>
           <div id="right">
             <div class="faction" id="werewolves">
-              <h2>Werewolves</h2>
-              <div class="allegiance" id="wolf">
-                <button class="collapse">Wolf</button>
-                <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> Only wolves remain in the
-                    game.
-                  </div>
-                  <div class="description">
-                      There is nothing special about you. You basically just wake
-                      up in the morning, toil away, lynch a poor chap, and
-                      furiously devour someone at night.
-                  </div>
-                </div>
+              <div class="titlePanel">
+                <h2>Werewolves</h2>
+                <h3>Devour villagers until only the wolf pack remains.</h3>
               </div>
-              <div class="allegiance" id="bigBadWolf">
-                <button class="collapse">Big Bad Wolf</button>
+              <div class="allegiance" id="bigBad">
+                <button class="collapse">Big Bad</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> Only wolves remain in the
-                    game.
-                  </div>
                   <div class="description">
                       You have a big bad appetite. Starting from the second night,
                       you wake up an additional time when you may devour a second
@@ -163,13 +137,18 @@
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="edgyWolf">
-                <button class="collapse">Edgy Wolf</button>
+              <div class="allegiance" id="cub">
+                <button class="collapse">Cub</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> Only wolves remain in the
-                    game.
+                  <div class="description">
+                      If you die, furious that their little cub was killed, the
+                      wolves get two kills the next night.
                   </div>
+                </div>
+              </div>
+              <div class="allegiance" id="edgy">
+                <button class="collapse">Edgy</button>
+                <div class="collapsible">
                   <div class="description">
                       You live on a different time zone always doing things at
                       your own pace. You awaken alone after the pack. You may then
@@ -178,28 +157,25 @@
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="wolfCub">
-                <button class="collapse">Wolf Cub</button>
+              <div class="allegiance" id="wolf">
+                <button class="collapse">Wolf</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> Only wolves remain in the
-                    game.
-                  </div>
                   <div class="description">
-                      If you die, furious that their little cub was killed, the
-                      wolves get two kills the next night.
+                      There is nothing special about you. You basically just wake
+                      up in the morning, toil away, lynch a poor chap, and
+                      furiously devour someone at night.
                   </div>
                 </div>
               </div>
             </div>
             <div class="faction" id="outcasts">
-              <h2>Outcasts</h2>
+              <div class="titlePanel">
+                <h2>Outcasts</h2>
+                <h3>Deceive the village until you remain the lone survivor.</h3>
+              </div>
               <div class="allegiance" id="loneWolf">
                 <button class="collapse">Lone Wolf</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> Only you remain in the game.
-                  </div>
                   <div class="description">
                     You wake and act with the wolves as one of them. However,
                     starting from the third night, you awaken an additional
@@ -210,9 +186,6 @@
               <div class="allegiance" id="soulEater">
                 <button class="collapse">Soul Eater</button>
                 <div class="collapsible">
-                  <div class="winCondition">
-                    <strong>Win condition:</strong> Only you remain in the game.
-                  </div>
                   <div class="description">
                       Sometimes you wish you had a better reason for doing this,
                       but the truth is that there is simply nothing you crave more

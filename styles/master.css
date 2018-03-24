@@ -32,13 +32,13 @@ h1 {
   color: inherit;
   font-family: sans-serif;
   height: 1em;
-  margin: -2em 1.5em 0 0;
+  margin: -2em 1.5em 2em 0;
   position: relative;
   text-align: right;
 }
 
 .dropdownContent {
-  background-color: #333;
+  background: #333;
   display: none;
   position: fixed;
   z-index: -1;
@@ -71,11 +71,11 @@ h1 {
 }
 
 .navItem a:hover, .navItem span:hover {
-  background-color: #111;
+  background: #111;
 }
 
 #navBar {
-  background-color: #333;
+  background: #333;
   list-style-type: none;
   left: 0;
   overflow: hidden;
@@ -83,4 +83,8 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+#navBar:hover {
+  opacity: 1;
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: #100;
+  background: #100;
   background-image: url("../werewolf/images/allegiances.png");
   color: #FFF;
 }
@@ -7,15 +7,22 @@ body {
 h1 {
   font-size: 100px;
   display: block;
+  margin-bottom: 0.25em;
   text-align: center;
-  text-shadow: 0 0 0.5em #F00;
+  text-shadow: 0 0 0.5em #800;
 }
 
 h2 {
   font-size: 50px;
   display: block;
+  margin-bottom: 0.25em;
   text-align: center;
-  text-shadow: 0 0 0.25em #F00;
+  text-shadow: 0 0 0.25em #000;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 #left, #right {
@@ -24,12 +31,26 @@ h2 {
   width: 50%;
 }
 
+.titlePanel {
+  background: #400;
+  border-radius: 10px;
+  display: block;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 0.25em #000;
+  width: 60%;
+}
+
 .allegiance {
-  background: #800;
+  background: #400;
   border-radius: 10px;
   box-shadow: 0 0 1em #000;
   cursor: pointer;
-  margin: 20px;
+  margin: 1.5em;
   opacity: 0.8;
 }
 
@@ -54,11 +75,11 @@ h2 {
   border-radius: 10px;
   color: #FFF;
   cursor: inherit;
-  font-size: 24px;
+  font-size: 20px;
   outline: none;
-  padding: 5px;
+  padding: 0.5em;
   text-align: left;
-  text-shadow: 0 0 0.25em #F00;
+  text-shadow: 0 0 0.25em #000;
   width: 100%;
 }
 
@@ -67,7 +88,7 @@ h2 {
 }
 
 .collapse.active:after {
-    content: "\2212";
+    content: '\2212';
 }
 
 .collapse:after {
