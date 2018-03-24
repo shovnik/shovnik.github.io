@@ -7,7 +7,6 @@ body {
 h1 {
   font-size: 100px;
   display: block;
-  margin-bottom: 0.25em;
   text-align: center;
   text-shadow: 0 0 0.5em #800;
 }
@@ -25,30 +24,46 @@ h3 {
   font-weight: normal;
 }
 
+table {
+  margin: 5em auto;
+  opacity: 0.8;
+  position: relative;
+}
+
+table, th {
+  border:  0.1em solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background: #400;
+  font-weight: bold;
+}
+
+td {
+  background: #FFF;
+  color: #400;
+}
+
+th, td {
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
 #left, #right {
   float: left;
   height: 100%;
   width: 50%;
 }
 
-.titlePanel {
-  background: #400;
-  border-radius: 10px;
-  display: block;
-  opacity: 0.8;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5em;
-  position: relative;
-  text-align: center;
-  text-shadow: 0 0 0.25em #000;
-  width: 60%;
+#allegiances {
+  margin: 2em 0;
 }
 
 .allegiance {
   background: #400;
   border-radius: 10px;
-  box-shadow: 0 0 1em #000;
+  box-shadow: 0 0 0.25em #000;
   cursor: pointer;
   margin: 1.5em;
   opacity: 0.8;
@@ -56,7 +71,7 @@ h3 {
 
 @keyframes panel {
   from {
-    box-shadow: 0 0 1em #000;
+    box-shadow: 0 0 0.25em #000;
   }
   to {
     box-shadow: 0 0 2em #000;
@@ -109,6 +124,20 @@ h3 {
 
 .faction {
   margin-bottom: 3em;
+}
+
+.titlePanel {
+  background: #400;
+  border-radius: 10px;
+  display: block;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 0.25em #000;
+  width: 60%;
 }
 
 .winCondition {
