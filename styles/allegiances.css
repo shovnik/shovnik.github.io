@@ -45,6 +45,18 @@ td {
   color: #400;
 }
 
+.evenEven {
+  background: #DBB;
+}
+
+.evenOdd {
+  background: #DDD;
+}
+
+.oddEven {
+  background: #FDD;
+}
+
 th, td {
   padding: 0.5em 1em;
   text-align: center;
@@ -123,7 +135,7 @@ th, td {
 }
 
 .faction {
-  margin-bottom: 3em;
+  margin: 0 1.5em 3em 1.5em;
 }
 
 .titlePanel {

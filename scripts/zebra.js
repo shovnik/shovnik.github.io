@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-  $('td:odd')
-    .css('background-color', "#FDD");
+  $('tr:even td:odd')
+    .addClass("oddEven")
   $('tr:odd td:even')
-    .css('background-color', "#DDD");
+    .addClass("evenOdd")
   $('tr:odd td:odd')
-    .css('background-color', "#DBB");
+    .addClass("evenEven")
 });
