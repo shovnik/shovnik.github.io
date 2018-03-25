@@ -19,10 +19,52 @@ h2 {
   text-shadow: 0 0 0.25em #000;
 }
 
+table {
+  margin: 5em auto;
+  opacity: 0.8;
+  position: relative;
+}
+
+table, th {
+  border:  0.1em solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background: #044;
+  font-weight: bold;
+}
+
+td {
+  background: #FFF;
+  color: #044;
+}
+
+.evenEven {
+  background: #BDD;
+}
+
+.evenOdd {
+  background: #DDD;
+}
+
+.oddEven {
+  background: #DFF;
+}
+
+th, td {
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
 #left, #right {
   float: left;
   height: 100%;
   width: 50%;
+}
+
+#roles {
+  margin: 2em 0;
 }
 
 .collapse {

@@ -8,6 +8,7 @@
     <script src="../lib/jquery-3.3.1.min.js" defer> </script>
     <script src="../scripts/collapse.js" defer></script>
     <script src="../scripts/navScroll.js" defer></script>
+    <script src="../scripts/zebra.js" defer></script>
   </head>
   <body>
     <div id="wrapper">
@@ -185,8 +186,8 @@
                 <div class="collapsible">
                   <div class="description">
                     Every night, you may designate a player of your choice. When
-                    tallying the votes for the lynching, the total vote count for
-                    the designated player is doubled.
+                    tallying the votes for the lynching, the total vote count
+                    for the designated player is doubled.
                   </div>
                 </div>
               </div>
@@ -216,8 +217,8 @@
                 <div class="collapsible">
                   <div class="description">
                     Every night, you may designate a player of your choice. When
-                    tallying the votes for the lynching, the total vote count for
-                    the designated player is halved.
+                    tallying the votes for the lynching, the total vote count
+                    for the designated player is halved.
                   </div>
                 </div>
               </div>
@@ -225,6 +226,95 @@
           </div>
         </div>
       </div>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Number of Players</th>
+            <th colspan="3">Ability Snatchers</th>
+            <th colspan="5">Life Manipulators</th>
+            <th colspan="4">Detection Specialists</th>
+            <th colspan="4">Lynch Meddlers</th>
+          </tr>
+          <tr>
+            <th>Omen</th><th>Pupil</th><th>Thief</th>
+            <th>Healer</th><th>Hunter</th><th>Sibling</th><th>Veteran</th>
+            <th>Witch</th><th>Bear Tamer</th><th>Fox</th><th>Psychic</th>
+            <th>Seer</th><th>Crow</th><th>Idiot</th><th>Prankster</th>
+            <th>Scarecrow</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>7</th><td>☓</td><td>☓</td><td>☓</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>☓</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>8</th><td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>☓</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>9</th><td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>10</th><td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>11</th><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>12</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>13</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>14</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>15</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>16</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>17</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>18</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>19</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          </tr>
+          <tr>
+            <th>20</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div id="footer">© 2018 Shovnik Bhattacharya</div>
   </body>
