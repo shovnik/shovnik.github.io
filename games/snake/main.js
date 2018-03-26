@@ -35,10 +35,21 @@ function newGame() {
   food = new Food();
 }
 
+// Disables default behaviour of control keys
+function preventDefault() {
+  document.onkeydown = function(event) {
+    const key = event.charCode || event.keyCode;
+    if (key === LEFT || key === UP || key === RIGHT || key === DOWN) {
+      event.preventDefault();
+    }
+  };
+}
+
 // Initial setup
 function setup() {
   const canvas = createCanvas(SCALE*WIDTH + 1, SCALE*(HEIGHT + 2) + 1);
   canvas.parent('canvas');
+  preventDefault();
   frameRate(120);
   textAlign(CENTER, CENTER);
   textSize(SCALE);

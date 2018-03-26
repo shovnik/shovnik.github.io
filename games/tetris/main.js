@@ -55,10 +55,23 @@ function newGame() {
   player.update();
 }
 
+// Disables default behaviour of control keys
+function preventDefault() {
+  document.onkeydown = function(event) {
+    const key = event.charCode || event.keyCode;
+    if (key === SHIFT_LEFT || key === SHIFT_RIGHT || key === DROP ||
+     key === INSTANT_DROP  || key === ROTATE_CLOCKWISE ||
+      key === ROTATE_ANTICLOCKWISE || key === STORE) {
+      event.preventDefault();
+    }
+  };
+}
+
 // Initial setup
 function setup() {
   const canvas = createCanvas(SCALE*(COLUMNS + 12) + 1, SCALE*ROWS + 1);
   canvas.parent('canvas');
+  preventDefault();
   frameRate(FRAMERATE);
   textAlign(CENTER, CENTER);
   newGame();

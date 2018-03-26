@@ -26,10 +26,21 @@ function newGame() {
   redrawCanvas();
 }
 
+// Disables default behaviour of control keys
+function preventDefault() {
+  document.onkeydown = function(event) {
+    const key = event.charCode || event.keyCode;
+    if (key === LEFT || key === UP || key === RIGHT || key === DOWN) {
+      event.preventDefault();
+    }
+  };
+}
+
 // Initial setup
 function setup() {
   const canvas = createCanvas(LENGTH + 1, LENGTH + SCALE/2 + 1);
   canvas.parent('canvas');
+  preventDefault();
   stroke(EDGE_COLOUR);
   textAlign(CENTER, CENTER);
   textSize(SCALE/2);
