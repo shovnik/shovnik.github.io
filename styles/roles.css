@@ -1,38 +1,14 @@
 body {
   background: #011;
   background-image: url("../werewolf/images/roles.png");
-  color: #FFF;
 }
 
 h1 {
-  font-size: 100px;
-  display: block;
-  text-align: center;
   text-shadow: 0 0 0.5em #088;
-}
-
-h2 {
-  font-size: 50px;
-  display: block;
-  margin-bottom: 0.25em;
-  text-align: center;
-  text-shadow: 0 0 0.25em #000;
-}
-
-table {
-  margin: 5em auto;
-  opacity: 0.8;
-  position: relative;
-}
-
-table, th {
-  border:  0.1em solid black;
-  border-collapse: collapse;
 }
 
 th {
   background: #044;
-  font-weight: bold;
 }
 
 td {
@@ -52,99 +28,14 @@ td {
   background: #DFF;
 }
 
-th, td {
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-#left, #right {
-  float: left;
-  height: 100%;
-  width: 50%;
-}
-
-#roles {
-  margin: 2em 0;
-}
-
-.collapse {
-  background: inherit;
-  border: none;
-  border-radius: 10px;
-  color: inherit;
-  cursor: inherit;
-  font-size: 24px;
-  outline: none;
-  padding: 0.5em;
-  text-align: left;
-  text-shadow: 0 0 0.25em #000;
-  width: 100%;
-}
-
-.collapse.active {
-  border-radius: 10px 10px 0 0;
-}
-
-.collapse:after {
-  content: '\002B';
-  float: right;
-}
-
-.collapse.active:after {
-    content: "\2212";
-}
-
-.collapsible {
-  background: inherit;
-  border-radius: 0 0 10px 10px;
-  display: none;
-  font-size: 16px;
-  text-shadow: 0 0 4px #000;
-  width: 100%;
-}
-
-.description {
-  padding: 20px;
-}
-
-.faction {
-  margin: 0 1.5em 3em 1.5em;
-}
-
-.role {
+.card {
   background: #044;
-  border-radius: 10px;
-  box-shadow: 0 0 0.25em #000;
-  cursor: pointer;
-  margin: 1.5em;
-  opacity: 0.8;
 }
 
-@keyframes panel {
-  from {
-    box-shadow: 0 0 0.25em #000;
-  }
-  to {
-    box-shadow: 0 0 2em #000;
-  }
-}
-
-.role:hover {
-  animation: panel 200ms;
-  background: #111;
-  box-shadow: 0 0 2em #000;
+.card:hover {
+  background: #133;
 }
 
 .titlePanel {
   background: #044;
-  border-radius: 10px;
-  display: block;
-  opacity: 0.8;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5em;
-  position: relative;
-  text-align: center;
-  text-shadow: 0 0 0.25em #000;
-  width: 60%;
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Werewolf: Allegiances</title>
     <link rel="stylesheet" href="../styles/master.css" type="text/css"> </link>
+    <link rel="stylesheet" href="../styles/cards.css" type="text/css"></link>
     <link rel="stylesheet" href="../styles/allegiances.css" type="text/css"></link>
     <script src="../lib/jquery-3.3.1.min.js" defer> </script>
     <script src="../scripts/collapse.js" defer></script>
@@ -43,61 +44,60 @@
       </div>
       <div id="content">
         <h1>Allegiances</h1>
-        <div id="allegiances">
+        <div id="cards">
           <div id="left">
             <div class="faction" id="villagers">
               <div class="titlePanel">
                 <h2>Villagers</h2>
                 <h3>Eradicate all wolves from the village.</h3>
               </div>
-              <div class="allegiance" id="lord">
+              <div class="card" id="lord">
                 <button class="collapse">Lord</button>
                 <div class="collapsible">
                   <div class="description">
                     If you are lynched, your allegiance is revealed to the
                     village, and all remaining players lose the abilities
-                    associated with their role.
+                    associated with their roles.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="lover">
+              <div class="card" id="lover">
                 <button class="collapse">Lover</button>
                 <div class="collapsible">
                   <div class="description">
-                    Every night, you may spend the night with the player of your
-                    choice. You get killed if your lover is attacked rather than
-                    if you yourself are attacked. Careful, if you sleep with a
-                    wolf, the wolf devours you.
+                    Every night, you may designate a player of your choice as
+                    your lover. You get killed if your lover is attacked rather
+                    than if you yourself are attacked, however if your lover is
+                    a wolf, your lover devours you.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="mentor">
+              <div class="card" id="mentor">
                 <button class="collapse">Mentor</button>
                 <div class="collapsible">
                   <div class="description">
-                    When you die, you may give your role to the player of your
-                    choice. In this scenario, you act before the pupil.
+                    When you die, you may give your role accompanied with any
+                    ability associated with it to the player of your choice.
+                    In this scenario, you act before the pupil.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="peasant">
+              <div class="card" id="peasant">
                 <button class="collapse">Peasant</button>
                 <div class="collapsible">
                   <div class="description">
-                    There is nothing special about you. You basically just wake
-                    up in the morning, toil away, lynch a poor chap, and pray
-                    not to be devoured at night.
+                    You are a common villager. Work with your fellow villagers
+                    to lynch all those who oppose the village.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="soulmate">
+              <div class="card" id="soulmate">
                 <button class="collapse">Soulmate</button>
                 <div class="collapsible">
                   <div class="description">
-                    Only on the first night, you get to meet your soulmate
-                    shrouded in silence and fall hopelessly in love. There
-                    onwards, if one of you may perish, the other follows. How
-                    tragic!
+                    You get to meet your soulmate the first night shrouded in
+                    silence falling hopelessly in love. There onwards, if one
+                    of you may perish, the other follows.
                   </div>
                 </div>
               </div>
@@ -107,16 +107,15 @@
                 <h2>Deranged</h2>
                 <h3>Trick the village into lynching you.</h3>
               </div>
-              <div class="allegiance" id="jester">
+              <div class="card" id="jester">
                 <button class="collapse">Jester</button>
                 <div class="collapsible">
                   <div class="description">
-                    There is nothing in the world you fantasize more than
-                    getting lynched. The intense feeling as the rope tightens
-                    around your neck but a moment away from eternal silence. As
-                    thanks for lynching you, after you die, you may give one of
-                    the lucky few who voted for your lynching the sweet release
-                    of death.
+                    There is nothing in you fantasize more than getting lynched.
+                    The intense feeling as the rope tightens around your neck
+                    but a moment away from eternal peace. As thanks, after you
+                    die, you may give one of those who voted to lynch you the
+                    sweet release of death.
                   </div>
                 </div>
               </div>
@@ -128,43 +127,41 @@
                 <h2>Werewolves</h2>
                 <h3>Devour villagers until only the wolf pack remains.</h3>
               </div>
-              <div class="allegiance" id="bigBad">
+              <div class="card" id="bigBad">
                 <button class="collapse">Big Bad</button>
                 <div class="collapsible">
                   <div class="description">
-                    You have a big bad appetite. Starting from the second night,
-                    you wake up an additional time when you may devour a second
-                    victim as a midnight snack.
+                    Starting from the second night, you wake an additional time
+                    when you may devour a second victim of your choice.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="cub">
+              <div class="card" id="cub">
                 <button class="collapse">Cub</button>
                 <div class="collapsible">
                   <div class="description">
-                    If you die, furious that their little cub was killed, the
-                    wolves get two kills the next night.
+                    If you die, furious by the death of their cub, the wolves
+                    attack an extra villager the following night.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="edgy">
-                <button class="collapse">Edgy</button>
+              <div class="card" id="dream">
+                <button class="collapse">Dream</button>
                 <div class="collapsible">
                   <div class="description">
-                    You live on a different time zone always doing things at
-                    your own pace. You awaken alone after the pack. You may then
-                    elect to shift the wolves’ victim for the night one player
+                    You only wake alone after the pack and your identity remains
+                    unknown to the other wolves. You may elect to shift which
+                    victim the wolves shall attack for the night one player
                     clockwise or anti-clockwise.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="wolf">
+              <div class="card" id="wolf">
                 <button class="collapse">Wolf</button>
                 <div class="collapsible">
                   <div class="description">
-                    There is nothing special about you. You basically just wake
-                    up in the morning, toil away, lynch a poor chap, and
-                    furiously devour someone at night.
+                    You are a common wolf. Work with your fellow wolves to
+                    eliminate all those who oppose the pack.
                   </div>
                 </div>
               </div>
@@ -174,26 +171,23 @@
                 <h2>Outcasts</h2>
                 <h3>Deceive the village until you remain the lone survivor.</h3>
               </div>
-              <div class="allegiance" id="loneWolf">
+              <div class="card" id="loneWolf">
                 <button class="collapse">Lone Wolf</button>
                 <div class="collapsible">
                   <div class="description">
-                  You wake and act with the wolves as one of them. However,
-                  starting from the third night, you awaken an additional
-                  time when you may kill a fellow wolf in cold blood.
+                  You wake and act with the wolves as one of them. Starting from
+                  the third night, you awaken an additional time when you may
+                  kill a fellow wolf in cold blood.
                   </div>
                 </div>
               </div>
-              <div class="allegiance" id="soulEater">
+              <div class="card" id="soulEater">
                 <button class="collapse">Soul Eater</button>
                 <div class="collapsible">
                   <div class="description">
-                    Sometimes you wish you had a better reason for doing this,
-                    but the truth is that there is simply nothing you crave more
-                    than a juicy soul. At the start of every night following the
-                    first, the souls of the dead players visit you. You may
-                    consume the one of your choice and gain its abilities for
-                    the rest of the game.
+                    The souls of the dead players visit you every night for you
+                    to feast upon. You gain the abilities associated with the
+                    role of all the souls you consume for the rest of the game.
                   </div>
                 </div>
               </div>
@@ -201,57 +195,87 @@
           </div>
         </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th rowspan="2">Number of Players</th><th colspan="5">Villager</th><th>Deranged</th><th colspan="4">Werewolf</th><th colspan="2">Outcast</th>
-          </tr>
-          <tr>
-            <th>Lord</th><th>Lover</th><th>Mentor</th><th>Peasant</th><th>Soulmate</th><th>Jester</th><th>Big Bad</th><th>Cub</th><th>Edgy</th><th>Wolf</th><th>Lone</th><th>Soul Eater</th>
-          </tr>
-        </thead>
+      <table cellspacing="0">
         <tbody>
           <tr>
-            <th>7</th><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>1</td><td>0</td>
+            <th rowspan="2">Number of Players</th><th colspan="5">Villager</th>
+            <th>Deranged</th><th colspan="4">Werewolf</th>
+            <th colspan="2">Outcast</th>
           </tr>
           <tr>
-            <th>8</th><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>1</td><td>1</td><td>0</td>
+            <th>Lord</th><th>Lover</th><th>Mentor</th><th>Peasant</th>
+            <th>Soulmate</th><th>Jester</th><th>Big Bad</th><th>Cub</th>
+            <th>Dream</th><th>Wolf</th><th>Lone</th><th>Soul Eater</th>
           </tr>
           <tr>
-            <th>9</th><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td>
+            <th>7</th><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>1</td>
+            <td>0</td>
           </tr>
           <tr>
-            <th>10</th><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td>
+            <th>8</th><td>0</td><td>1</td><td>1</td><td>2</td><td>0</td>
+            <td>0</td><td>0</td><td>0</td><td>2</td><td>1</td><td>1</td>
+            <td>0</td>
           </tr>
           <tr>
-            <th>11</th><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+            <th>9</th><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td>
+            <td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+            <td>0</td>
           </tr>
           <tr>
-            <th>12</th><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+            <th>10</th><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td>
+            <td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+            <td>0</td>
           </tr>
           <tr>
-            <th>13</th><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+            <th>11</th><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td>
+            <td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>14</th><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>0</td><td>1</td>
+            <th>12</th><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>15</th><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td>
+            <th>13</th><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>16</th><td>1</td><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>3</td><td>1</td><td>0</td><td>1</td>
+            <th>14</th><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>0</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>17</th><td>1</td><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>3</td><td>1</td><td>1</td><td>1</td>
+            <th>15</th><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>18</th><td>1</td><td>1</td><td>1</td><td>4</td><td>2</td><td>1</td><td>1</td><td>1</td><td>4</td><td>1</td><td>0</td><td>1</td>
+            <th>16</th><td>1</td><td>1</td><td>1</td><td>3</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>3</td><td>1</td><td>0</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>19</th><td>1</td><td>1</td><td>1</td><td>4</td><td>2</td><td>1</td><td>1</td><td>1</td><td>4</td><td>1</td><td>1</td><td>1</td>
+            <th>17</th><td>1</td><td>1</td><td>1</td><td>3</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>3</td><td>1</td><td>1</td>
+            <td>1</td>
           </tr>
           <tr>
-            <th>20</th><td>1</td><td>1</td><td>1</td><td>5</td><td>2</td><td>1</td><td>1</td><td>1</td><td>5</td><td>1</td><td>0</td><td>1</td>
+            <th>18</th><td>1</td><td>1</td><td>1</td><td>4</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>4</td><td>1</td><td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>19</th><td>1</td><td>1</td><td>1</td><td>4</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>4</td><td>1</td><td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>20</th><td>1</td><td>1</td><td>1</td><td>5</td><td>2</td>
+            <td>1</td><td>1</td><td>1</td><td>5</td><td>1</td><td>0</td>
+            <td>1</td>
           </tr>
         </tbody>
       </table>

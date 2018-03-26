@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Werewolf: Roles</title>
     <link rel="stylesheet" href="../styles/master.css" type="text/css"> </link>
+    <link rel="stylesheet" href="../styles/cards.css" type="text/css"></link>
     <link rel="stylesheet" href="../styles/roles.css" type="text/css"> </link>
     <script src="../lib/jquery-3.3.1.min.js" defer> </script>
     <script src="../scripts/collapse.js" defer></script>
@@ -43,13 +44,13 @@
       </div>
       <div id="content">
         <h1>Roles</h1>
-        <div id="roles">
+        <div id="cards">
           <div id="left">
             <div class="faction" id="Ability Snatchers">
               <div class="titlePanel">
                 <h2>Ability Snatchers</h2>
               </div>
-              <div class="role" id="omen">
+              <div class="card" id="omen">
                 <button class="collapse">Omen</button>
                 <div class="collapsible">
                   <div class="description">
@@ -59,7 +60,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="pupil">
+              <div class="card" id="pupil">
                 <button class="collapse">Pupil</button>
                 <div class="collapsible">
                   <div class="description">
@@ -68,7 +69,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="thief">
+              <div class="card" id="thief">
                 <button class="collapse">Thief</button>
                 <div class="collapsible">
                   <div class="description">
@@ -82,7 +83,7 @@
               <div class="titlePanel">
                 <h2>Life Manipulators</h2>
               </div>
-              <div class="role" id="healer">
+              <div class="card" id="healer">
                 <button class="collapse">Healer</button>
                 <div class="collapsible">
                   <div class="description">
@@ -91,7 +92,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="hunter">
+              <div class="card" id="hunter">
                 <button class="collapse">Hunter</button>
                 <div class="collapsible">
                   <div class="description">
@@ -100,7 +101,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="sibling">
+              <div class="card" id="sibling">
                 <button class="collapse">Sibling</button>
                 <div class="collapsible">
                   <div class="description">
@@ -110,7 +111,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="veteran">
+              <div class="card" id="veteran">
                 <button class="collapse">Veteran</button>
                 <div class="collapsible">
                   <div class="description">
@@ -119,7 +120,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="witch">
+              <div class="card" id="witch">
                 <button class="collapse">Witch</button>
                 <div class="collapsible">
                   <div class="description">
@@ -137,7 +138,7 @@
               <div class="titlePanel">
                 <h2>Detection Speciliasts</h2>
               </div>
-              <div class="role" id="bearTamer">
+              <div class="card" id="bearTamer">
                 <button class="collapse">Bear Tamer</button>
                 <div class="collapsible">
                   <div class="description">
@@ -147,7 +148,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="fox">
+              <div class="card" id="fox">
                 <button class="collapse">Fox</button>
                 <div class="collapsible">
                   <div class="description">
@@ -157,7 +158,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="psychic">
+              <div class="card" id="psychic">
                 <button class="collapse">Psychic</button>
                 <div class="collapsible">
                   <div class="description">
@@ -167,7 +168,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="seer">
+              <div class="card" id="seer">
                 <button class="collapse">Seer</button>
                 <div class="collapsible">
                   <div class="description">
@@ -181,7 +182,7 @@
               <div class="titlePanel">
                 <h2>Lynch Meddlers</h2>
               </div>
-              <div class="role" id="crow">
+              <div class="card" id="crow">
                 <button class="collapse">Crow</button>
                 <div class="collapsible">
                   <div class="description">
@@ -191,18 +192,18 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="idiot">
+              <div class="card" id="idiot">
                 <button class="collapse">Idiot</button>
                 <div class="collapsible">
                   <div class="description">
                     If you are designated to be lynched, your role is revealed
                     to the village. Feeling foolish for having suspected you of
                     such devious crimes, the villagers decide to spare you, but
-                    you lose your right to vote for good.
+                    you lose your right to vote for the rest of the game.
                   </div>
                 </div>
               </div>
-              <div class="role" id="prankster">
+              <div class="card" id="prankster">
                 <button class="collapse">Prankster</button>
                 <div class="collapsible">
                   <div class="description">
@@ -212,7 +213,7 @@
                   </div>
                 </div>
               </div>
-              <div class="role" id="scarecrow">
+              <div class="card" id="scarecrow">
                 <button class="collapse">Scarecrow</button>
                 <div class="collapsible">
                   <div class="description">
@@ -226,94 +227,90 @@
           </div>
         </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th rowspan="2">Number of Players</th>
-            <th colspan="3">Ability Snatchers</th>
-            <th colspan="5">Life Manipulators</th>
-            <th colspan="4">Detection Specialists</th>
-            <th colspan="4">Lynch Meddlers</th>
-          </tr>
-          <tr>
-            <th>Omen</th><th>Pupil</th><th>Thief</th>
-            <th>Healer</th><th>Hunter</th><th>Sibling</th><th>Veteran</th>
-            <th>Witch</th><th>Bear Tamer</th><th>Fox</th><th>Psychic</th>
-            <th>Seer</th><th>Crow</th><th>Idiot</th><th>Prankster</th>
-            <th>Scarecrow</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>7</th><td>☓</td><td>☓</td><td>☓</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>☓</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>8</th><td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>☓</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>9</th><td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>10</th><td>☓</td><td>☓</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>11</th><td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>12</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>13</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>☓</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>14</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>☓</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>15</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>16</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>17</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>18</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>19</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-          </tr>
-          <tr>
-            <th>20</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-            <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-          </tr>
-        </tbody>
+      <table cellspacing="0">
+        <tr>
+          <th rowspan="2">Number of Players</th>
+          <th colspan="3">Ability Snatchers</th>
+          <th colspan="5">Life Manipulators</th>
+          <th colspan="4">Detection Specialists</th>
+          <th colspan="4">Lynch Meddlers</th>
+        </tr>
+        <tr>
+          <th>Omen</th><th>Pupil</th><th>Thief</th>
+          <th>Healer</th><th>Hunter</th><th>Sibling</th><th>Veteran</th>
+          <th>Witch</th><th>Bear Tamer</th><th>Fox</th><th>Psychic</th>
+          <th>Seer</th><th>Crow</th><th>Idiot</th><th>Prankster</th>
+          <th>Scarecrow</th>
+        </tr>
+        <tr>
+          <th>7</th><td>✘</td><td>✘</td><td>✘</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✘</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>8</th><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✘</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>9</th><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>10</th><td>✘</td><td>✘</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>11</th><td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>12</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>13</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✘</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>14</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✘</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>15</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>16</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>17</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>18</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>19</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+        </tr>
+        <tr>
+          <th>20</th><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+          <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+        </tr>
       </table>
     </div>
     <div id="footer">© 2018 Shovnik Bhattacharya</div>

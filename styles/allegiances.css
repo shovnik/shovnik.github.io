@@ -1,43 +1,14 @@
 body {
   background: #100;
   background-image: url("../werewolf/images/allegiances.png");
-  color: #FFF;
 }
 
 h1 {
-  font-size: 100px;
-  display: block;
-  text-align: center;
   text-shadow: 0 0 0.5em #800;
-}
-
-h2 {
-  font-size: 50px;
-  display: block;
-  margin-bottom: 0.25em;
-  text-align: center;
-  text-shadow: 0 0 0.25em #000;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: normal;
-}
-
-table {
-  margin: 5em auto;
-  opacity: 0.8;
-  position: relative;
-}
-
-table, th {
-  border:  0.1em solid black;
-  border-collapse: collapse;
 }
 
 th {
   background: #400;
-  font-weight: bold;
 }
 
 td {
@@ -57,101 +28,14 @@ td {
   background: #FDD;
 }
 
-th, td {
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-#left, #right {
-  float: left;
-  height: 100%;
-  width: 50%;
-}
-
-#allegiances {
-  margin: 2em 0;
-}
-
-.allegiance {
+.card {
   background: #400;
-  border-radius: 10px;
-  box-shadow: 0 0 0.25em #000;
-  cursor: pointer;
-  margin: 1.5em;
-  opacity: 0.8;
 }
 
-@keyframes panel {
-  from {
-    box-shadow: 0 0 0.25em #000;
-  }
-  to {
-    box-shadow: 0 0 2em #000;
-  }
-}
-
-.allegiance:hover {
-  animation: panel 200ms;
-  background: #111;
-  box-shadow: 0 0 2em #000;
-}
-
-.collapse {
-  background: inherit;
-  border: none;
-  border-radius: 10px;
-  color: #FFF;
-  cursor: inherit;
-  font-size: 20px;
-  outline: none;
-  padding: 0.5em;
-  text-align: left;
-  text-shadow: 0 0 0.25em #000;
-  width: 100%;
-}
-
-.collapse.active {
-  border-radius: 10px 10px 0 0;
-}
-
-.collapse.active:after {
-    content: '\2212';
-}
-
-.collapse:after {
-  content: '\002B';
-  float: right;
-}
-
-.collapsible {
-  border-radius: 0 0 10px 10px;
-  display: none;
-  font-size: 16px;
-  width: 100%;
-}
-
-.description {
-  padding: 20px;
-}
-
-.faction {
-  margin: 0 1.5em 3em 1.5em;
+.card:hover {
+  background: #211;
 }
 
 .titlePanel {
   background: #400;
-  border-radius: 10px;
-  display: block;
-  opacity: 0.8;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5em;
-  position: relative;
-  text-align: center;
-  text-shadow: 0 0 0.25em #000;
-  width: 60%;
-}
-
-.winCondition {
-  padding: 20px 20px 0 20px;
 }
