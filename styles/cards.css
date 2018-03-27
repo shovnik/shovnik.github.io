@@ -50,11 +50,8 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 7.5px;
 }
 
-th {
-  font-weight: bold;
-}
-
 th, td {
+  font-weight: bold;
   padding: 0.5em 1em;
   text-align: center;
 }
@@ -67,6 +64,10 @@ th, td {
 
 #cards {
   margin: 2em 0;
+}
+
+#footer {
+  text-shadow: 0 0 0.25em #000;
 }
 
 .collapse {
@@ -146,5 +147,5 @@ th, td {
   position: relative;
   text-align: center;
   text-shadow: 0 0 0.25em #000;
-  width: 60%;
+  width: 70%;
 }
