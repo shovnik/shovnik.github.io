@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Games</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
     <link rel="stylesheet" href="styles/master.css" type="text/css"></link>
-    <link rel="stylesheet" href="styles/index.css" type="text/css"></link>
+    <link rel="stylesheet" href="styles/docs.css" type="text/css"></link>
     <link rel="prefetch" href="werewolf/images/allegiances.png" type="text/css"></link>
     <link rel="prefetch" href="werewolf/images/roles.png" type="text/css"></link>
     <script src="lib/jquery-3.3.1.min.js" defer></script>
@@ -44,8 +45,8 @@
       </div>
       <div id="content">
         <h1 id="title">Games</h1>
-        <div class="games">
-          <div class="game" id="-2048">
+        <div id="games">
+          <div class="panel" id="-2048">
             <a href="2048.html"><h2>2048</h2></a>
             <div class="description">
               <strong>How to play:</strong>
@@ -55,12 +56,12 @@
                 creating tiles with even larger numbers.
               </p>
               <strong>Controls:</strong>
-              <ul class="controls">
+              <ul class="bulletList">
                 <li>Arrow keys slide the tiles in the direction pressed</li>
               </ul>
             </div>
           </div>
-          <div class="game" id="minesweeper">
+          <div class="panel" id="minesweeper">
             <a href="minesweeper.html"><h2>Minesweeper</h2></a>
             <div class="description">
               <strong>How to play:</strong>
@@ -70,7 +71,7 @@
                 revealed cells.
                </p>
                <strong>Controls:</strong>
-               <ul class="controls">
+               <ul class="bulletList">
                  <li>Left click hidden cell to reveal</li>
                  <li>Right click hidden cell to mark as mined</li>
                  <li>Click revealed cell with correct amount of surrounding marked
@@ -78,7 +79,7 @@
                </ul>
             </div>
           </div>
-          <div class="game" id="slide-puzzle">
+          <div class="panel" id="slide-puzzle">
             <a href="slide_puzzle.html"><h2>Slide Puzzle</h2></a>
             <div class="description">
               <strong>How to play:</strong>
@@ -88,12 +89,12 @@
                 sliding tiles into the vacant space.
                </p>
                <strong>Controls:</strong>
-               <ul class="controls">
+               <ul class="bulletList">
                  <li>Click tile adjacent to vacant space to slide it in</li>
                </ul>
             </div>
           </div>
-          <div class="game" id="snake">
+          <div class="panel" id="snake">
             <a href="snake.html"><h2>Snake</h2></a>
             <div class="description">
               <strong>How to play:</strong>
@@ -102,12 +103,12 @@
                 colliding with any of the walls or the snake's own tail.
                </p>
                <strong>Controls:</strong>
-               <ul class="controls">
+               <ul class="bulletList">
                  <li>Arrow keys change direction snake is heading</li>
                </ul>
             </div>
           </div>
-          <div class="game" id="tetris">
+          <div class="panel" id="tetris">
             <a href="tetris.html"><h2>Tetris</h2></a>
             <div class="description">
               <strong>How to play:</strong>
@@ -117,7 +118,7 @@
                 the screen without overflowing out of the arena.
                </p>
                <strong>Controls:</strong>
-               <ul class="controls">
+               <ul class="bulletList">
                  <li>Left and right arrow keys shift block side to side</li>
                  <li>Down arrow key drops block faster</li>
                  <li>Up arrow and control key rotate blocks clockwise and

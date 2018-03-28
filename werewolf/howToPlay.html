@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Games</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
     <link rel="stylesheet" href="../styles/master.css" type="text/css"></link>
-    <link rel="stylesheet" href="../styles/index.css" type="text/css"></link>
+    <link rel="stylesheet" href="../styles/docs.css" type="text/css"></link>
+    <link rel="stylesheet" href="../styles/howToPlay.css" type="text/css"></link>
     <link rel="prefetch" href="images/allegiances.png" type="text/css"></link>
     <link rel="prefetch" href="images/roles.png" type="text/css"></link>
     <script src="../lib/jquery-3.3.1.min.js" defer></script>
@@ -44,6 +47,157 @@
       </div>
       <div id="content">
         <h1>How to Play</h1>
+        <div id="rules">
+          <div class="panel" id="setup">
+            <h2>Setup</h2>
+            <div class="description">
+              <p class="text">
+                Assemble a group of seven to twenty players as well as someone
+                willing to be game master to begin a game of werewolf. Refer to
+                the <a href="roles.html" class="role">role</a> and
+                <a href="allegiances.html"  class="allegiance">allegiance</a>
+                card distribution chart to select the cards that form each of
+                the two sets based on the number of players. The game master
+                then distributes one <a href="roles.html" class="role">role</a>
+                card and one <a href="allegiances.html" class="allegiance">
+                allegiance</a> card face down to each player respectively.
+                Players should discretely glance at the cards they were dealt to
+                discover what character they will be playing this game. There is
+                a total of 192 unique character combinations of
+                <a href="roles.html" class="role">role</a> and
+                <a href="allegiances.html" class="allegiance">allegiance</a> a
+                player may obtain!
+              </p>
+              <br/>
+            </div>
+          </div>
+          <div class="panel" id="gameplay">
+            <h2>Gameplay</h2>
+            <div class="description">
+              <p class="text">
+                The game consists of continuously cycling night and day phases
+                always beginning with a night. Players considered dead give
+                their cards to the game master, leave the game, and may spectate
+                the rest of the game from the sidelines. A game ends when no
+                players with opposing win conditions associated with their
+                <a href="allegiances.html" class="allegiance">allegiance</a> remain.
+              </p>
+              <br/>
+              <strong>Night:</strong>
+              <p class="text">
+                During the night, all players close their eyes and attempt to be
+                as quiet as possible. The game master directs the flow of the
+                night by calling players with specific
+                <a href="roles.html" class="role">roles</a> or
+                <a href="allegiances.html" class="allegiance">allegiances</a> to
+                wake in turn based on the call order provided below. When
+                players are called by the game master, they may open their eyes
+                and make decisions using signs but must remain silent. Once a
+                player’s action is complete, they must close their eyes once
+                again.
+              </p>
+              <p class="text">
+                In addition to all the abilities associated with
+                <a href="roles.html" class="role">roles</a> and
+                <a href="allegiances.html" class="allegiance">allegiances</a>,
+                all werewolves except for a dream wolf wake up together once
+                every night to select one player to attack that night. Once all
+                actions are complete, at the signal of the game master, players
+                wake up. The game master then announces those who have been
+                killed, wounded, designated, or cursed as the result of the
+                actions that took place in the night after which the day phase
+                ensues.
+              </p>
+              <br/>
+              <strong>Day:</strong>
+              <p class="text">
+                  At the beginning of the first day of the game, players nominate
+                each other or themselves to be the captain of the village. Those
+                nominated may optionally give a speech explaining why they wish
+                to be captain. A captain is then elected by popular vote and
+                given a special item to be distinguishable as captain to all
+                other players (hat, rock, cushion, etc.). The vote of the
+                captain serves as a tie breaker during the lynching process. If
+                at any point the captain dies, the captain may choose who shall
+                be the next captain and give them the special item.
+              </p>
+              <p class="text">
+                  During the core of the day, players discuss and deliberate for a
+                limited time to share information, deceive, and gain insight on
+                the characters of the other players. They must then move on to
+                accusations where they nominate candidates to be lynched. A vote
+                for the lynching is then made, and the winning candidate is
+                considered lynched by the village and dies. Promptly, the
+                following night commences unless the game has ended.
+              </p>
+            </div>
+          </div>
+          <div class="panel" id="limits">
+            <h2>Limits</h2>
+            <div class="description">
+              <strong>Avoid:</strong>
+              <ul class="bulletList">
+                <li>
+                  Revealing one of your whole cards unless explicitly stated in
+                  the context of an ability associated with a
+                  <a href="roles.html" class="role">role</a> or
+                  <a href="allegiances.html" class="allegiance">allegiance</a>.
+                </li>
+                <li>
+                  Revealing any information before the game master announces the
+                  results of the night or after the village votes to lynch you.
+                </li>
+                <li>
+                  Discussing any information related to the on-going game
+                  privately to another player rather than to all other players
+                  while you are alive.
+                </li>
+                <li>
+                  Discussing information related to the on-going game loud
+                  enough for live players to hear after you die.
+                </li>
+                <li>
+                  Declaring a mistake was made or ending the game without first
+                  confirming with the game master.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel" id="callOrder">
+            <h2>Call Order</h2>
+            <div class="description">
+              <p>
+                Here is the order in which the game master order should call
+                the <a href="roles.html" class="role">roles</a> and
+                <a href="roles.html" class="allegiance">allegiances</a> during
+                the night phase. Note that even if no player possesses the role
+                or allegiance in question, the game master will still call it.
+              </p>
+              <br/>
+              <strong>Top to Bottom:</strong>
+              <ul class="bulletList">
+                <li>Soulmates - Night 1 only</li>
+                <li>Soul Eater - Night 2 onwards</li>
+                <li>Lover</li>
+                <li>Wolf pack</li>
+                <li>Big Bad Wolf</li>
+                <li>Dream Wolf - Night 2 onwards</li>
+                <li>Lone Wolf - Night 3 onwards</li>
+                <li>Seer</li>
+                <li>Fox</li>
+                <li>Bear Tamer</li>
+                <li>Psychic</li>
+                <li>Healer</li>
+                <li>Witch</li>
+                <li>Siblings</li>
+                <li>Crow</li>
+                <li>Scarecrow</li>
+                <li>Thief</li>
+                <li>Omen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="footer">© 2018 Shovnik Bhattacharya</div>

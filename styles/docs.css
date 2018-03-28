@@ -2,19 +2,15 @@ body {
   background: #EFF;
 }
 
-h1 {
-  text-align: center;
-}
-
 h2 {
   background: #333;
   border-radius: 10px 10px 0 0;
   color: #FFF;
   font-weight: normal;
-  padding: 5px;
+  padding: 0.5em;
 }
 
-h2:hover {
+a h2:hover {
   color: #0FF;
 }
 
@@ -22,7 +18,7 @@ p {
   margin: 10px 20px;
 }
 
-.controls {
+.bulletList {
   margin: 10px 0;
   padding: 0 0 0 40px;
 }
@@ -30,11 +26,18 @@ p {
 .description {
   background: #FFF;
   border-radius: 0 0 10px 10px;
+  line-height: 1.5;
+  font-size: 16px;
   padding: 20px;
 }
 
-.game {
+.panel {
   border-radius: 10px;
   box-shadow: 0 0 4px #000;
   margin: 2px 2px 12px 2px;
+}
+
+.text {
+  text-align: justify;
+  text-indent: 1em;
 }

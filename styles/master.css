@@ -5,6 +5,7 @@
 
 html, body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -12,12 +13,14 @@ a {
 }
 
 h1 {
-  padding: 15px;
+  font-size: 64px;
+  display: block;
+  padding: 0.3em 0.3em 0.2em 0.3em;
+  text-align: center;
 }
 
 #wrapper {
   display: block;
-  font-family: sans-serif;
   margin-top: 3em;
   min-height: 100%;
   position: relative;
@@ -30,7 +33,6 @@ h1 {
 #footer {
   clear: both;
   color: inherit;
-  font-family: sans-serif;
   height: 1em;
   margin: -1.5em 1.5em 1.5em 0;
   position: relative;
@@ -66,7 +68,7 @@ h1 {
 .navItem a, .navItem span {
   color: #FFF;
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   padding: 14px 16px;
 }
 

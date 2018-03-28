@@ -1,0 +1,23 @@
+a.allegiance {
+  color: #800;
+}
+
+a.allegiance:visited {
+  color: #800;
+}
+
+a.allegiance:hover {
+  color: #F00;
+}
+
+a.role {
+  color: #088;
+}
+
+a.role:visited {
+  color: #088;
+}
+
+a.role:hover {
+  color: #0DD;
+}

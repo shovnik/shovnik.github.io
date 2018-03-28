@@ -3,13 +3,11 @@ body {
 }
 
 h1 {
-  font-size: 100px;
-  display: block;
-  text-align: center;
+  font-size: 95px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 48px;
   display: block;
   margin-bottom: 0.25em;
   text-align: center;
@@ -17,7 +15,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   text-shadow: 0 0 0.25em #000;
 }
@@ -51,6 +49,7 @@ tr:last-child td:last-child {
 }
 
 th, td {
+  font-family: Arial, sans-serif;
   font-weight: bold;
   padding: 0.5em 1em;
   text-align: center;
@@ -76,7 +75,7 @@ th, td {
   border-radius: 7.5px;
   color: inherit;
   cursor: inherit;
-  font-size: 20px;
+  font-size: 24px;
   outline: none;
   padding: 0.5em;
   text-align: left;
@@ -130,7 +129,7 @@ th, td {
 }
 
 .description {
-  line-height: 1.6;
+  line-height: 1.5;
   padding: 1.5em;
 }
 
